@@ -11,6 +11,51 @@ body{
 }
 
 /* 2. Content ================================= */
+.wrapper{
+	width: 100%;
+	height: 100vh;
+}
 
-.content{
+header{
+	background: url(../img/home-bkg-1.png) no-repeat top;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	
+	.logo{
+		width: 15%;
+		height: auto;
+		margin: 50px 42.5% 100px;
+		transition: .2s;
+	}
+
+	nav{
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		ul{
+			display: flex;
+			flex-direction: column;
+
+			a{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.body{
+	//just starting to work on this but dinner called
+	background: url(../img/home-bkg-2.png) no-repeat top;
+	background-size: cover;
+	width: 100%;
+	height: 80%;
+}
+
+@media screen and (min-width: 780px){
+	.logo{
+		margin: 150px 42.5% 100px;
+		//this isn't working yet
+	}
 }
