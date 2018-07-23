@@ -77,10 +77,35 @@ header {
 }
 
 header .logo {
-	width: 50%;
+	width: 45%;
 	height: auto;
-	margin: 50px 25%;
+	margin: 50px 27.5%;
 	transition: .5s;
+}
+
+header .cloud {
+	width: 20%;
+	height: auto;
+	position: absolute;
+}
+
+header .cloud1 {
+	top: 40px;
+	left: 5%;
+}
+
+header .cloud2 {
+	top: 50px;
+	right: 5%;
+}
+
+header .cloud3 {
+	top: 190px;
+	left: 15%;
+}
+
+header .cloud4 {
+	display: none;
 }
 
 header nav {
