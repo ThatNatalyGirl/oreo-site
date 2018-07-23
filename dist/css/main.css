@@ -71,8 +71,10 @@ body {
 header {
 	background: url(../img/mobile-bkg-1.png) no-repeat top right;
 	background-size: 100%;
+	overflow: hidden;
 	width: 100%;
 	height: 100%;
+	min-height: 400px;
 	transition: .5s;
 }
 
@@ -92,20 +94,24 @@ header .cloud {
 header .cloud1 {
 	top: 40px;
 	left: 5%;
+	transition: .5s;
 }
 
 header .cloud2 {
 	top: 50px;
 	right: 5%;
+	transition: .5s;
 }
 
 header .cloud3 {
 	top: 190px;
 	left: 15%;
+	transition: .5s;
 }
 
 header .cloud4 {
 	display: none;
+	transition: .5s;
 }
 
 header nav {
@@ -121,6 +127,35 @@ header nav ul {
 
 header nav ul a {
 	text-decoration: none;
+	padding: 15px;
+}
+
+header nav ul a:hover {
+	cursor: pointer;
+}
+
+header .plants {
+	position: absolute;
+	height: auto;
+	transition: .5s;
+}
+
+header .plant1 {
+	top: 250px;
+	right: 31%;
+	width: 20%;
+}
+
+header .plant2 {
+	top: 262px;
+	right: 15%;
+	width: 15%;
+}
+
+header .plant3 {
+	top: 273px;
+	right: 3%;
+	width: 10%;
 }
 
 .body {
@@ -168,12 +203,47 @@ header nav ul a {
 	header .logo {
 		width: 20%;
 		height: auto;
-		margin: 50px 42.5%;
+		margin: 120px 42.5%;
 		transition: .5s;
+	}
+	header .cloud {
+		width: 10%;
+	}
+	header .cloud1 {
+		top: 100px;
+		left: 10%;
+	}
+	header .cloud2 {
+		top: 50px;
+		right: 20%;
+	}
+	header .cloud3 {
+		top: 230px;
+		left: 18%;
+	}
+	header .cloud4 {
+		display: block;
+		top: 170px;
+		right: 10%;
+	}
+	header .plant1 {
+		top: 452px;
+		right: 22%;
+		width: 12%;
+	}
+	header .plant2 {
+		top: 470px;
+		right: 11%;
+		width: 10%;
+	}
+	header .plant3 {
+		top: 495px;
+		right: 3%;
+		width: 7%;
 	}
 	.body {
 		background: url(../img/home-bkg-2.png);
-		background-size: cover;
+		background-size: 100%;
 		min-height: 3500px;
 		margin-top: -400px;
 	}
