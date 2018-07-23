@@ -73,26 +73,52 @@ header{
 }
 
 .body{
-	position: relative;
 	background: url(../img/mobile-bkg-2.png) no-repeat top;
 	background-size: 100%;
 	width: 100%;
 	height: auto;
 	min-height: 2650px;
 	margin-top: -500px;
-	transition: .2s;
+	transition: .5s;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: space-around;
+	text-align: center;
+
+	section{
+		padding-top: 150px;
+		transition: .5s;
+	}
 }
 
-.videos{
-	height: 30%;
+.videoSect{
+	.video{
+		display: flex;
+		justify-content: space-around;
+		margin: 0 10%;
+
+		video{
+			width: 60%;
+			height: auto;
+			background: #f0f2d8;
+			border: 15px solid #ee4623;
+			border-radius: 20px;
+
+		}
+
+		a{
+			text-decoration: none;
+			font-size: 50px;
+			color: #fff;
+			margin-top: 50px;
+		}
+	}
 }
 
-.flavors{
-	height: 30%;
+.flavorSect{
 }
 
-.recipes{	
-	height: 30%;
+.recipeSect{	
 }
 
 @media screen and (min-width: 740px){
@@ -104,7 +130,7 @@ header{
 			width: 20%;
 			height: auto;
 			margin: 50px 42.5%;
-			transition: .2s;
+			transition: .5s;
 		}	
 	}
 
@@ -113,6 +139,10 @@ header{
 		background-size: cover;
 		min-height: 3500px;
 		margin-top: -400px;
+
+		section{
+			padding-top: 250px;
+		}
 	}
 }
 
