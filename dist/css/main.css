@@ -128,9 +128,22 @@ header nav ul a {
 	background: url(../img/mobile-bkg-2.png) no-repeat top;
 	background-size: 100%;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	min-height: 2650px;
 	margin-top: -500px;
 	transition: .2s;
+}
+
+.videos {
+	height: 30%;
+}
+
+.flavors {
+	height: 30%;
+}
+
+.recipes {
+	height: 30%;
 }
 
 @media screen and (min-width: 740px) {
@@ -147,6 +160,8 @@ header nav ul a {
 	.body {
 		background: url(../img/home-bkg-2.png);
 		background-size: cover;
+		min-height: 3500px;
+		margin-top: -400px;
 	}
 }
 
