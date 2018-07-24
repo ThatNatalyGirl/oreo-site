@@ -118,6 +118,7 @@ header nav {
 	position: absolute;
 	right: 0;
 	top: 0;
+	font-family: 'Chewy', cursive;
 }
 
 header nav ul {
@@ -167,6 +168,7 @@ header .plant3 {
 	margin-top: -500px;
 	transition: .5s;
 	text-align: center;
+	font-family: 'Sigmar One', cursive;
 }
 
 .body section {
