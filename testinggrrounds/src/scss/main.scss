@@ -45,14 +45,6 @@ body {
 
 /* 2. Sections ================================= */
 
-// div{
-// 	width: 100%;
-// 	height: auto;
-// 	position: relative;
-// 	// background-color: red;
-// }
-
-
 .hero{
 	background: url("../img/header-resized.png") no-repeat #85e0ff;
 	background-size: auto;
@@ -63,6 +55,19 @@ body {
 .video{
 	background: #faaf4c;
 	height: 700px;
+	position: relative;
+
+	.side-wave{
+		width: 20%;
+		background: red;
+		float: left;
+	}
+
+	.content{
+		width: 80%;
+		background: purple;
+		float: left;
+	}
 }
 
 .flavor{
@@ -177,7 +182,7 @@ body {
 	&:before{
 		@include wave-before;
 			background: url("../img/footer.png") no-repeat;
-			height: 400px;
+			height: 120px;
 			background-size: cover;
 	}
 }
