@@ -1,0 +1,261 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* 2. Sections ================================= */
+.hero {
+	background: url("../img/header-resized.png") no-repeat #85e0ff;
+	background-size: auto;
+	height: 700px;
+	width: 100%;
+}
+
+.video {
+	background: #faaf4c;
+	height: 700px;
+}
+
+.flavor {
+	background: #f9c2c2;
+	height: 700px;
+}
+
+.recipe {
+	background: #ee4623;
+	height: 600px;
+}
+
+.avatar {
+	background: #86cdb3;
+	height: 700px;
+}
+
+.mole {
+	background: #a970af;
+	height: 700px;
+}
+
+.footer {
+	background: #faaf4c;
+	height: 300px;
+}
+
+/* 3. Waves ================================= */
+.background {
+	background: linear;
+	position: relative;
+	background-color: #ea5098;
+}
+
+.background:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	height: 343px;
+	bottom: 100%;
+	background: url("../img/header2-resized.png") no-repeat;
+	background-size: cover;
+}
+
+.one {
+	background: linear;
+	position: relative;
+}
+
+.one:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	height: 385px;
+	bottom: 100%;
+	width: 100%;
+	background: url("../img/video-resized.png") no-repeat;
+}
+
+.two {
+	background: linear;
+	position: relative;
+}
+
+.two:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	height: 290px;
+	background: url("../img/flavor-back.png") no-repeat;
+	background-size: contain;
+}
+
+.two:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	background: url("../img/flavor-front.png") no-repeat;
+	height: 260px;
+	background-size: cover;
+}
+
+.three {
+	background: linear;
+	position: relative;
+}
+
+.three:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	background: url("../img/recipe.png") no-repeat;
+	height: 260px;
+	background-size: cover;
+}
+
+.four {
+	background: linear;
+	position: relative;
+}
+
+.four:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	background: url("../img/game-one.png") no-repeat;
+	height: 223px;
+	background-size: cover;
+}
+
+.five {
+	background: linear;
+	position: relative;
+}
+
+.five:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	background: url("../img/game-two.png") no-repeat;
+	height: 415px;
+	background-size: cover;
+}
+
+.six {
+	background: linear;
+	position: relative;
+}
+
+.six:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+	background: url("../img/footer.png") no-repeat;
+	height: 400px;
+	background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

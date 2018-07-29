@@ -1,0 +1,184 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+@mixin wave{
+	background: linear;
+	position: relative;
+}
+
+@mixin wave-before{ 
+	content:'';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	bottom: 100%;
+	background-size: cover;
+}
+
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;	
+}
+
+/* 2. Sections ================================= */
+
+// div{
+// 	width: 100%;
+// 	height: auto;
+// 	position: relative;
+// 	// background-color: red;
+// }
+
+
+.hero{
+	background: url("../img/header-resized.png") no-repeat #85e0ff;
+	background-size: auto;
+    height: 700px;
+	width: 100%;
+}
+
+.video{
+	background: #faaf4c;
+	height: 700px;
+}
+
+.flavor{
+	background: #f9c2c2;
+	height: 700px;
+}
+
+.recipe{
+	background: #ee4623;
+	height: 600px;
+}
+
+.avatar{
+	background: #86cdb3;
+	height: 700px;
+}
+
+.mole{
+	background: #a970af;
+	height: 700px;
+}
+
+.footer{
+	background: #faaf4c;
+	height: 300px;
+}
+
+
+
+/* 3. Waves ================================= */
+
+.background {
+	@include wave;
+	background-color: #ea5098;
+
+	&:before {
+		@include wave-before;
+		height:343px;
+		bottom: 100%;
+		background: url("../img/header2-resized.png") no-repeat;
+		background-size: cover;
+	}
+}
+
+.one {
+	@include wave;
+
+	&:after {
+		@include wave-before;
+		height: 385px;
+		bottom: 100%;
+		width: 100%;
+		background: url("../img/video-resized.png") no-repeat;
+		// background-size: contain;
+	}
+}
+
+.two{
+	@include wave;
+
+	&:before{
+		@include wave-before;
+		height: 290px;
+		background: url("../img/flavor-back.png") no-repeat;
+		background-size: contain;
+	}
+
+	&:after{
+		@include wave-before;
+		background: url("../img/flavor-front.png") no-repeat;
+		height: 260px;
+		background-size: cover;		
+	}
+}
+
+.three{
+	@include wave;
+
+	&:before{
+		@include wave-before;
+		background: url("../img/recipe.png") no-repeat;
+		height: 260px;
+		background-size: cover;
+	}
+}
+
+.four{
+	@include wave;
+
+	&:before{
+		@include wave-before;
+			background: url("../img/game-one.png") no-repeat;
+			height: 223px;
+			background-size: cover;
+	}
+}
+
+.five{
+	@include wave;
+
+	&:before{
+		@include wave-before;
+			background: url("../img/game-two.png") no-repeat;
+			height: 415px;
+			background-size: cover;
+	}
+}
+
+.six{
+	@include wave;
+
+	&:before{
+		@include wave-before;
+			background: url("../img/footer.png") no-repeat;
+			height: 400px;
+			background-size: cover;
+	}
+}
+
