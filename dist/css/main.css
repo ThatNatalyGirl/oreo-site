@@ -68,14 +68,14 @@ body {
 .wrapper {
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 
 header {
-	background: url(../img/sky.png) no-repeat;
+	background: url(../img/sky.png) no-repeat bottom;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
-	min-height: 400px;
 	transition: .5s;
 }
 
@@ -86,33 +86,10 @@ header .logo {
 	transition: .5s;
 }
 
-header .cloud {
-	width: 20%;
-	height: auto;
+header .clouds {
+	width: 600%;
 	position: absolute;
-}
-
-header .cloud1 {
-	top: 40px;
-	left: 5%;
-	transition: .5s;
-}
-
-header .cloud2 {
 	top: 50px;
-	right: 5%;
-	transition: .5s;
-}
-
-header .cloud3 {
-	top: 190px;
-	left: 15%;
-	transition: .5s;
-}
-
-header .cloud4 {
-	display: none;
-	transition: .5s;
 }
 
 header nav {
@@ -120,6 +97,47 @@ header nav {
 	right: 0;
 	top: 0;
 	font-family: 'Chewy', cursive;
+	transform: translate(0px, 0px);
+	animation: float 20s ease-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	15% {
+		transform: translate(-20px, 20px);
+	}
+	30% {
+		transform: translate(-30px, 0px);
+	}
+	45% {
+		transform: translate(-10px, -20px);
+	}
+	60% {
+		transform: translate(-30px, -15px);
+	}
+	75% {
+		transform: translate(-50px, 0px);
+	}
+	90% {
+		transform: translate(-20px, 10px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+header nav h3 {
+	position: absolute;
+	font-size: 20px;
+	top: 55px;
+	right: 27px;
+	color: #fff;
+}
+
+header nav img {
+	margin-top: 30px;
 }
 
 header nav ul {
@@ -130,6 +148,7 @@ header nav ul {
 header nav ul a {
 	text-decoration: none;
 	padding: 15px;
+	transition: .5s;
 }
 
 header nav ul a:hover {
@@ -213,10 +232,17 @@ section {
 }
 
 .videoSect .video a {
-	text-decoration: none;
-	font-size: 50px;
-	color: #fff;
-	margin-top: 50px;
+	z-index: 1;
+}
+
+.videoSect .video a:hover {
+	cursor: pointer;
+}
+
+.videoSect .video a img {
+	width: 25%;
+	height: auto;
+	margin-top: 4em;
 }
 
 .flavorSect {
@@ -335,6 +361,24 @@ footer:before {
 	width: 100%;
 	min-height: 550px;
 	background-image: url(../img/curve-7.png);
+}
+
+@media screen and (min-width: 740px) {
+	header .logo {
+		width: 20%;
+		height: auto;
+		margin: 120px 42.5%;
+		transition: .5s;
+	}
+	header .clouds {
+		width: 400%;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	header .clouds {
+		width: 300%;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
