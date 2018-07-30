@@ -60,18 +60,19 @@ table {
 
 body {
 	background: #fff;
+	width: 100%;
+	height: 100%;
 }
 
 /* 2. Content ================================= */
 .wrapper {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 }
 
 header {
-	background: url(../img/mobile-bkg-1.png) no-repeat top right;
-	background-size: 100%;
-	overflow: hidden;
+	background: url(../img/sky.png) no-repeat;
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	min-height: 400px;
@@ -79,9 +80,9 @@ header {
 }
 
 header .logo {
-	width: 45%;
+	width: 20%;
 	height: auto;
-	margin: 50px 27.5%;
+	margin: 60px 40% 130px;
 	transition: .5s;
 }
 
@@ -159,21 +160,42 @@ header .plant3 {
 	width: 10%;
 }
 
-.body {
-	background: url(../img/mobile-bkg-2.png) no-repeat top;
+.pink {
+	background: url(../img/curve-1.png) no-repeat bottom;
 	background-size: 100%;
+	position: relative;
+	bottom: 0px;
 	width: 100%;
-	height: auto;
-	min-height: 2650px;
-	margin-top: -500px;
+	min-height: 400px;
+}
+
+section {
 	transition: .5s;
 	text-align: center;
 	font-family: 'Sigmar One', cursive;
 }
 
-.body section {
-	padding-top: 150px;
+.videoSect {
+	background: #faaf4c;
+	bottom: -15px;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 500px;
 	transition: .5s;
+}
+
+.videoSect:before {
+	content: '';
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 550px;
+	background-image: url(../img/curve-2.png);
 }
 
 .videoSect .video {
@@ -197,61 +219,122 @@ header .plant3 {
 	margin-top: 50px;
 }
 
-@media screen and (min-width: 740px) {
-	header {
-		background: url(../img/home-bkg-1.png);
-		background-size: cover;
-	}
-	header .logo {
-		width: 20%;
-		height: auto;
-		margin: 120px 42.5%;
-		transition: .5s;
-	}
-	header .cloud {
-		width: 10%;
-	}
-	header .cloud1 {
-		top: 100px;
-		left: 10%;
-	}
-	header .cloud2 {
-		top: 50px;
-		right: 20%;
-	}
-	header .cloud3 {
-		top: 230px;
-		left: 18%;
-	}
-	header .cloud4 {
-		display: block;
-		top: 170px;
-		right: 10%;
-	}
-	header .plant1 {
-		top: 452px;
-		right: 22%;
-		width: 12%;
-	}
-	header .plant2 {
-		top: 470px;
-		right: 11%;
-		width: 10%;
-	}
-	header .plant3 {
-		top: 495px;
-		right: 3%;
-		width: 7%;
-	}
-	.body {
-		background: url(../img/home-bkg-2.png);
-		background-size: 100%;
-		min-height: 3500px;
-		margin-top: -400px;
-	}
-	.body section {
-		padding-top: 250px;
-	}
+.flavorSect {
+	background: #f9c2c2;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	transition: .5s;
+}
+
+.flavorSect:before {
+	content: '';
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 550px;
+	background-image: url(../img/curve-3.png);
+}
+
+.flavorSect h2 {
+	margin: 30px;
+}
+
+.flavorSect a {
+	padding-bottom: 20px;
+}
+
+.recipeSect {
+	background: #ee4623;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	transition: .5s;
+}
+
+.recipeSect:before {
+	content: '';
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 550px;
+	background-image: url(../img/curve-4.png);
+}
+
+.game1Sect {
+	background: #86cdb3;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	transition: .5s;
+}
+
+.game1Sect:before {
+	content: '';
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 550px;
+	background-image: url(../img/curve-5.png);
+}
+
+.game2Sect {
+	background: #a970af;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	transition: .5s;
+}
+
+.game2Sect:before {
+	content: '';
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 550px;
+	background-image: url(../img/curve-6.png);
+}
+
+footer {
+	background: #faaf4c;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	transition: .5s;
+}
+
+footer:before {
+	content: '';
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 550px;
+	background-image: url(../img/curve-7.png);
 }
 
 /*# sourceMappingURL=main.css.map */
