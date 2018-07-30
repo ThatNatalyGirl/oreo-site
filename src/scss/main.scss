@@ -62,7 +62,7 @@ header{
 	nav{
 		position: absolute;
 		right: 0;
-		top: 0;
+		top: 20px;
 		font-family: 'Chewy', cursive;
 		transform: translate(0px, 0px);
 		animation: float 20s ease-out infinite;
@@ -96,24 +96,33 @@ header{
 
 		h3{
 			position: absolute;
-			font-size: 20px;
-			top: 55px;
-			right: 27px;
+			font-size: 2.2vw;
+			top: 35px;
+			right: 35%;
 			color: #fff;
 		}
 
-		img{
-			margin-top: 30px;
+		.ladder{
+			position: absolute;
+			width: 100%;
+			top: 22px;
+			right: 1%;
+			z-index: -1;
 		}
 
 		ul{
 			display: flex;
 			flex-direction: column;
+			align-items: center;
+			line-height: 30px;
+			margin-top: -15px;
+			z-index: 2;
 
 			a{
 				text-decoration: none;
 				padding: 15px;
 				transition: .5s;
+				font-size: 2vw;
 
 				&:hover{
 					cursor: pointer;
@@ -271,6 +280,12 @@ footer{
 			width: 400%;
 		}	
 
+		nav{
+			.ladder{
+				top: 29px;
+			}
+		}
+
 		// .plant1{
 		// 	top: 452px;
 		// 	right: 22%;
@@ -304,6 +319,12 @@ footer{
 	header{
 		.clouds{
 			width: 300%;
+		}
+
+		nav{
+			h3{
+				right: 30%;
+			}
 		}
 	}
 }
