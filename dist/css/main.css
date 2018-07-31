@@ -208,8 +208,7 @@ header .plant3 {
 	background: url(../img/curve-1.png) no-repeat bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 0px;
-	bottom: -32%;
+	bottom: -34%;
 	width: 100%;
 	height: 500px;
 	transition: .5s;
