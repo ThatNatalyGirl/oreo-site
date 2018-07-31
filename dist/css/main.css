@@ -170,10 +170,10 @@ header .plants {
 	transition: .5s;
 	bottom: 0px;
 	transform: translate(0px, 0px) rotate(0deg);
-	animation: ani-flowers 5s ease-in-out infinite;
+	animation: ani-plants 5s ease-in-out infinite;
 }
 
-@keyframes ani-flowers {
+@keyframes ani-plants {
 	0% {
 		transform: translate(0px, 0px) rotate(0deg);
 	}
@@ -186,18 +186,18 @@ header .plants {
 }
 
 header .plant1 {
-	right: 20%;
-	width: 13%;
+	right: 14%;
+	width: 10%;
 }
 
 header .plant2 {
-	right: 9%;
-	width: 11%;
+	right: 6%;
+	width: 8%;
 }
 
 header .plant3 {
 	right: 1%;
-	width: 8%;
+	width: 5%;
 }
 
 .pink {
@@ -205,10 +205,6 @@ header .plant3 {
 	background-size: 100%;
 	position: relative;
 	bottom: 0px;
-	width: 100%;
-	min-height: 400px;
-	background-size: cover;
-	position: relative;
 	width: 100%;
 	height: 500px;
 	transition: .5s;
@@ -218,7 +214,7 @@ header .plant3 {
 	position: absolute;
 	bottom: 0%;
 	right: 0;
-	width: 45%;
+	width: 25%;
 }
 
 .pink .light-green {
@@ -229,7 +225,7 @@ header .plant3 {
 	position: absolute;
 	bottom: 0%;
 	right: 0;
-	width: 35%;
+	width: 20%;
 	min-height: 550px;
 }
 
@@ -247,6 +243,7 @@ section {
 	width: 100%;
 	height: 500px;
 	transition: .5s;
+	height: auto;
 }
 
 .videoSect:before {
@@ -260,6 +257,25 @@ section {
 	width: 100%;
 	min-height: 550px;
 	background-image: url(../img/curve-2.png);
+}
+
+.videoSect .side-purple {
+	position: absolute;
+	top: -20%;
+	left: 0;
+	width: 15%;
+}
+
+.videoSect .side-green {
+	background-image: url(../img/side-green-curve.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+	width: 5%;
+	min-height: 550px;
 }
 
 .videoSect .video {
