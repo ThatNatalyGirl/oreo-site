@@ -420,15 +420,24 @@ section{
 	}
 }
 
-/////////Cup Section/////////////
-footer{	
+/////////Milk Glass Section/////////////
+.milkSect{	
 	background: #faaf4c;
 	@include sect;
+	height: 300px;
 
 	&:before{
 		@include wave;
 		background-image: url(../img/curve-7.png);
 	}
+
+	.milkGlass{
+		position: absolute;
+		width: 20%;
+		bottom: 0;
+		left: 40%;
+	}
+
 }
 
 @media screen and (min-width: 740px){

@@ -506,16 +506,17 @@ section {
 	background-image: url(../img/curve-6.png);
 }
 
-footer {
+.milkSect {
 	background: #faaf4c;
 	background-size: cover;
 	position: relative;
 	width: 100%;
 	height: 500px;
 	transition: .5s;
+	height: 300px;
 }
 
-footer:before {
+.milkSect:before {
 	content: '';
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -526,6 +527,13 @@ footer:before {
 	width: 100%;
 	min-height: 550px;
 	background-image: url(../img/curve-7.png);
+}
+
+.milkSect .milkGlass {
+	position: absolute;
+	width: 20%;
+	bottom: 0;
+	left: 40%;
 }
 
 @media screen and (min-width: 740px) {
