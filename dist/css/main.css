@@ -98,10 +98,10 @@ header nav {
 	top: 20px;
 	font-family: 'Chewy', cursive;
 	transform: translate(0px, 0px);
-	animation: float 20s ease-out infinite;
+	animation: ani-balloon 20s ease-out infinite;
 }
 
-@keyframes float {
+@keyframes ani-balloon {
 	0% {
 		transform: translate(0px, 0px);
 	}
@@ -168,24 +168,36 @@ header .plants {
 	position: absolute;
 	height: auto;
 	transition: .5s;
+	bottom: 0px;
+	transform: translate(0px, 0px) rotate(0deg);
+	animation: ani-flowers 5s ease-in-out infinite;
+}
+
+@keyframes ani-flowers {
+	0% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	50% {
+		transform: translate(5px, 5px) rotate(7deg);
+	}
+	100% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
 }
 
 header .plant1 {
-	top: 250px;
-	right: 31%;
-	width: 20%;
+	right: 20%;
+	width: 13%;
 }
 
 header .plant2 {
-	top: 262px;
-	right: 15%;
-	width: 15%;
+	right: 9%;
+	width: 11%;
 }
 
 header .plant3 {
-	top: 273px;
-	right: 3%;
-	width: 10%;
+	right: 1%;
+	width: 8%;
 }
 
 .pink {
@@ -195,6 +207,30 @@ header .plant3 {
 	bottom: 0px;
 	width: 100%;
 	min-height: 400px;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	transition: .5s;
+}
+
+.pink .dark-green {
+	position: absolute;
+	bottom: 0%;
+	right: 0;
+	width: 45%;
+}
+
+.pink .light-green {
+	background-image: url(../img/light-green-curve.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0%;
+	right: 0;
+	width: 35%;
+	min-height: 550px;
 }
 
 section {
@@ -232,12 +268,16 @@ section {
 	margin: 0 10%;
 }
 
-.videoSect .video video {
-	width: 60%;
-	height: auto;
-	background: #f0f2d8;
-	border: 15px solid #ee4623;
-	border-radius: 20px;
+.videoSect .video .videoBg {
+	background: url(../img/video-player.png) no-repeat;
+	background-size: 100%;
+	height: 600px;
+	width: 100%;
+}
+
+.videoSect .video .videoBg iframe {
+	width: 80%;
+	margin-top: 40px;
 }
 
 .videoSect .video a {

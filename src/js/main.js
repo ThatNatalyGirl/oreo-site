@@ -8,19 +8,20 @@ var ladder = document.querySelector(".ladder")
 navItem.forEach(function(element){
 		element.style.color = "transparent";	
 	});
+ladder.style.display = "none";
 
 nav.addEventListener("mouseover", function(){
 	navItem.forEach(function(element){
 		element.style.color = "#fff";	
 	});
-	// ladder.style.display = "block";
+	ladder.style.display = "block";
 });
 
 nav.addEventListener("mouseout", function(){
 	navItem.forEach(function(element){
 		element.style.color = "transparent";	
 	});
-	// ladder.style.display = "none";
+	ladder.style.display = "none";
 });
 
 
