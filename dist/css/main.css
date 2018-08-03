@@ -64,6 +64,11 @@ body {
 	height: 100%;
 }
 
+h2 {
+	font-size: 3vw;
+	letter-spacing: 1px;
+}
+
 /* 2. Content ================================= */
 .wrapper {
 	width: 100%;
@@ -78,8 +83,8 @@ header {
 	background-size: auto 100%;
 	width: 100%;
 	height: 0;
-	padding-bottom: 36%;
-	margin-bottom: 13%;
+	padding-bottom: 35%;
+	margin-bottom: 16%;
 	transition: .5s;
 }
 
@@ -98,6 +103,7 @@ header .clouds {
 
 header nav {
 	position: absolute;
+	height: 20px;
 	right: 0;
 	top: 20px;
 	font-family: 'Chewy', cursive;
@@ -168,7 +174,22 @@ header nav ul a:hover {
 	cursor: pointer;
 }
 
-header .plants {
+header .plant1 {
+	right: 14%;
+	width: 10%;
+}
+
+header .plant2 {
+	right: 6%;
+	width: 8%;
+}
+
+header .plant3 {
+	right: 1%;
+	width: 5%;
+}
+
+.plants {
 	position: absolute;
 	height: auto;
 	transition: .5s;
@@ -189,26 +210,11 @@ header .plants {
 	}
 }
 
-header .plant1 {
-	right: 14%;
-	width: 10%;
-}
-
-header .plant2 {
-	right: 6%;
-	width: 8%;
-}
-
-header .plant3 {
-	right: 1%;
-	width: 5%;
-}
-
 .pink {
 	background: url(../img/curve-1.png) no-repeat bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: -34%;
+	bottom: -44%;
 	width: 100%;
 	height: 500px;
 	transition: .5s;
@@ -245,9 +251,10 @@ section {
 	background-size: cover;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 0;
+	padding-bottom: 50%;
 	transition: .5s;
-	height: auto;
+	padding-bottom: 39%;
 }
 
 .videoSect:before {
@@ -263,46 +270,49 @@ section {
 	background-image: url(../img/curve-2.png);
 }
 
-.videoSect .side-purple {
+.videoSect .sidePurple {
 	position: absolute;
-	margin-top: -10%;
+	margin-top: -17%;
 	left: 0;
-	width: 15%;
+	width: 9.5%;
 	height: auto;
 }
 
-.videoSect .side-green {
+.videoSect .leftVine {
+	position: absolute;
+	margin-top: -1%;
+	left: 1%;
+	width: 8%;
+}
+
+.videoSect .sideGreen {
 	background-image: url(../img/side-green-curve.png);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: 100%;
 	position: absolute;
-	bottom: 0%;
-	left: 0;
-	width: 5%;
-	min-height: 550px;
+	width: 7%;
+	height: 0%;
+	padding-bottom: 34%;
+	margin-top: -21%;
 }
 
 .videoSect .video {
 	display: flex;
 	justify-content: space-around;
-	margin: 0 10%;
+	margin: 0 10% 30%;
 }
 
 .videoSect .video .videoBg {
 	background: url(../img/video-player.png) no-repeat;
 	background-size: 100%;
-	height: 600px;
 	width: 100%;
-}
-
-.videoSect .video .videoBg iframe {
-	width: 80%;
-	margin-top: 40px;
+	height: auto;
 }
 
 .videoSect .video a {
 	z-index: 1;
+	height: auto;
 }
 
 .videoSect .video a:hover {
@@ -320,8 +330,10 @@ section {
 	background-size: cover;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 0;
+	padding-bottom: 50%;
 	transition: .5s;
+	padding-bottom: 42%;
 }
 
 .flavorSect:before {
@@ -339,10 +351,67 @@ section {
 
 .flavorSect h2 {
 	margin: 30px;
+	color: #ee4623;
 }
 
-.flavorSect a {
-	padding-bottom: 20px;
+.flavorSect .string1 {
+	background: url(../img/desktop-string.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0;
+	width: 100%;
+	min-height: 200px;
+}
+
+.flavorSect a .oreo {
+	position: absolute;
+	width: 9%;
+}
+
+.flavorSect a .oreo1 {
+	left: 1%;
+	top: 5%;
+}
+
+.flavorSect a .oreo2 {
+	left: 12%;
+	top: 11%;
+}
+
+.flavorSect a .oreo3 {
+	left: 23%;
+	top: 15%;
+}
+
+.flavorSect a .oreo4 {
+	left: 35%;
+	top: 17.5%;
+}
+
+.flavorSect a .oreo5 {
+	left: 46%;
+	top: 19%;
+}
+
+.flavorSect a .oreo6 {
+	left: 57%;
+	top: 18%;
+}
+
+.flavorSect a .oreo7 {
+	left: 68%;
+	top: 16%;
+}
+
+.flavorSect a .oreo8 {
+	left: 79%;
+	top: 12%;
+}
+
+.flavorSect a .oreo9 {
+	left: 90%;
+	top: 6%;
 }
 
 .recipeSect {
@@ -350,8 +419,10 @@ section {
 	background-size: cover;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 0;
+	padding-bottom: 50%;
 	transition: .5s;
+	padding-bottom: 53%;
 }
 
 .recipeSect:before {
@@ -367,12 +438,76 @@ section {
 	background-image: url(../img/curve-4.png);
 }
 
+.recipeSect h2 {
+	color: #fff;
+}
+
+.recipeSect .left, .recipeSect .right {
+	position: absolute;
+}
+
+.recipeSect .leftPink {
+	left: 0;
+	width: 14%;
+	margin-top: 6%;
+}
+
+.recipeSect .leftOrange {
+	left: 0;
+	width: 10%;
+	margin-top: 6%;
+}
+
+.recipeSect .rightPink {
+	right: 0;
+	width: 11%;
+	top: 10%;
+}
+
+.recipeSect .rightOrange {
+	right: 0;
+	width: 8.5%;
+	top: 12%;
+}
+
+.recipeSect .plant1 {
+	left: 4%;
+	top: 38%;
+	width: 10%;
+}
+
+.recipeSect .plant2 {
+	left: 2%;
+	top: 19%;
+	width: 8%;
+}
+
+.recipeSect .plant3 {
+	left: -1%;
+	top: 6%;
+	width: 6%;
+}
+
+.recipeSect .rightVine {
+	position: absolute;
+	margin-top: 18%;
+	right: 5%;
+	width: 8%;
+}
+
+.recipeSect .rightPlant2 {
+	right: 0%;
+	top: 7%;
+	width: 8%;
+}
+
 .game1Sect {
 	background: #86cdb3;
 	background-size: cover;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 0;
+	padding-bottom: 50%;
 	transition: .5s;
 }
 
@@ -494,7 +629,8 @@ section {
 	background-size: cover;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 0;
+	padding-bottom: 50%;
 	transition: .5s;
 }
 
@@ -516,7 +652,8 @@ section {
 	background-size: cover;
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 0;
+	padding-bottom: 50%;
 	transition: .5s;
 	height: 300px;
 }
