@@ -315,10 +315,23 @@ section{
 	}
 	
 	a{
+		perspective: 600px;
+
 		.oreo{
 			position: absolute;
 			width: 9%;
+			z-index: 100;
+			transform-style: preserve-3d;
+
+			transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+			transition: .5s;
+
+			&:hover{
+			transform: rotate3d(1, 0, 1, 10deg) translate3d(0, 1px, 20px);	
+			cursor: pointer
+			}
 		}
+
 		.oreo1{
 			left: 1%;
 			top: 5%;
@@ -549,6 +562,7 @@ section{
 .game2Sect{	
 	background: #a970af;
 	@include sect;
+	padding-bottom: 30%;
 
 	&:before{
 		@include wave;
@@ -560,7 +574,7 @@ section{
 .milkSect{	
 	background: #faaf4c;
 	@include sect;
-	height: 300px;
+	padding-bottom: 14%;
 
 	&:before{
 		@include wave;
@@ -569,9 +583,9 @@ section{
 
 	.milkGlass{
 		position: absolute;
-		width: 20%;
+		width: 18%;
 		bottom: 0;
-		left: 40%;
+		left: 41%;
 	}
 
 }

@@ -364,9 +364,22 @@ section {
 	min-height: 200px;
 }
 
+.flavorSect a {
+	perspective: 600px;
+}
+
 .flavorSect a .oreo {
 	position: absolute;
 	width: 9%;
+	z-index: 100;
+	transform-style: preserve-3d;
+	transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+	transition: .5s;
+}
+
+.flavorSect a .oreo:hover {
+	transform: rotate3d(1, 0, 1, 10deg) translate3d(0, 1px, 20px);
+	cursor: pointer;
 }
 
 .flavorSect a .oreo1 {
@@ -632,6 +645,7 @@ section {
 	height: 0;
 	padding-bottom: 50%;
 	transition: .5s;
+	padding-bottom: 30%;
 }
 
 .game2Sect:before {
@@ -655,7 +669,7 @@ section {
 	height: 0;
 	padding-bottom: 50%;
 	transition: .5s;
-	height: 300px;
+	padding-bottom: 14%;
 }
 
 .milkSect:before {
@@ -673,9 +687,9 @@ section {
 
 .milkSect .milkGlass {
 	position: absolute;
-	width: 20%;
+	width: 18%;
 	bottom: 0;
-	left: 40%;
+	left: 41%;
 }
 
 @media screen and (min-width: 740px) {
