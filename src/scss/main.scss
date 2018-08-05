@@ -77,7 +77,19 @@ header{
 	}
 
 	img.is-dunking{
-		opacity: .2;
+		animation: ani-falling linear 5s infinite;
+		@keyframes ani-falling {
+			0% {
+			  background-position: 0px;
+			  transform: translateY(0px) rotate(0deg);
+			  opacity: 1;
+			}
+			100% {
+			  background-position: -864px;
+			  transform: translateY(550px) rotate(180deg);
+			  opacity: 0;
+			}
+		  }
 	}
 
 	.clouds{
