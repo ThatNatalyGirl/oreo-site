@@ -93,6 +93,15 @@ header .logo {
 	height: auto;
 	transition: .5s;
 	margin: 5% 40% 130px;
+	top: 0;
+}
+
+header .not-smaller {
+	opacity: 100;
+}
+
+header .is-smaller {
+	opacity: .2;
 }
 
 header .clouds {
@@ -168,6 +177,7 @@ header nav ul a {
 	padding: 15px;
 	transition: .5s;
 	font-size: 2vw;
+	color: white;
 }
 
 header nav ul a:hover {
