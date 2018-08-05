@@ -416,7 +416,65 @@ section {
 	position: absolute;
 	width: 9%;
 	z-index: 100;
+}
+
+.flavorSect a .oreo:hover {
+	cursor: pointer;
+	animation-play-state: paused;
+}
+
+.flavorSect a .oreo1 {
+	left: 1%;
+	top: 5%;
+	animation: ani-far-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo2 {
+	left: 12%;
+	top: 11%;
 	animation: ani-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo3 {
+	left: 23%;
+	top: 15%;
+	animation: ani-reverse-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo4 {
+	left: 35%;
+	top: 17.5%;
+	animation: ani-reverse-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo5 {
+	left: 46%;
+	top: 19%;
+	animation: ani-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo6 {
+	left: 57%;
+	top: 18%;
+	animation: ani-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo7 {
+	left: 68%;
+	top: 16%;
+	animation: ani-reverse-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo8 {
+	left: 79%;
+	top: 12%;
+	animation: ani-swing 2s infinite alternate ease-in-out;
+}
+
+.flavorSect a .oreo9 {
+	left: 90%;
+	top: 6%;
+	animation: ani-far-swing 2s infinite alternate ease-in-out;
 }
 
 @keyframes ani-swing {
@@ -428,54 +486,22 @@ section {
 	}
 }
 
-.flavorSect a .oreo:hover {
-	cursor: pointer;
-	animation-play-state: paused;
+@keyframes ani-far-swing {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(3deg);
+	}
 }
 
-.flavorSect a .oreo1 {
-	left: 1%;
-	top: 5%;
-}
-
-.flavorSect a .oreo2 {
-	left: 12%;
-	top: 11%;
-}
-
-.flavorSect a .oreo3 {
-	left: 23%;
-	top: 15%;
-}
-
-.flavorSect a .oreo4 {
-	left: 35%;
-	top: 17.5%;
-}
-
-.flavorSect a .oreo5 {
-	left: 46%;
-	top: 19%;
-}
-
-.flavorSect a .oreo6 {
-	left: 57%;
-	top: 18%;
-}
-
-.flavorSect a .oreo7 {
-	left: 68%;
-	top: 16%;
-}
-
-.flavorSect a .oreo8 {
-	left: 79%;
-	top: 12%;
-}
-
-.flavorSect a .oreo9 {
-	left: 90%;
-	top: 6%;
+@keyframes ani-reverse-swing {
+	0% {
+		transform: rotate(3deg);
+	}
+	100% {
+		transform: rotate(-3deg);
+	}
 }
 
 .recipeSect {

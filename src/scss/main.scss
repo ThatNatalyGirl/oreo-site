@@ -367,15 +367,6 @@ section{
 			// transform-style: preserve-3d;
 			// transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
 			// transition: .5s;
-			animation: ani-swing 2s infinite alternate ease-in-out;
-			@keyframes ani-swing {
-				0% { 
-					transform: rotate(-2deg)
-				}
-				100% { 
-					transform: rotate(3deg) 
-				}
-			}
 			
 			&:hover{
 			// transform: rotate3d(1, 0, 1, 10deg) translate3d(0, 1px, 20px);
@@ -388,38 +379,74 @@ section{
 		.oreo1{
 			left: 1%;
 			top: 5%;
+			animation: ani-far-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo2{
 			left: 12%;
 			top: 11%;
+			animation: ani-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo3{
 			left: 23%;
 			top: 15%;
+			animation: ani-reverse-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo4{
 			left: 35%;
 			top: 17.5%;
+			animation: ani-reverse-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo5{
 			left: 46%;
 			top: 19%;
+			animation: ani-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo6{
 			left: 57%;
 			top: 18%;
+			animation: ani-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo7{
 			left: 68%;
 			top: 16%;
+			animation: ani-reverse-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo8{
 			left: 79%;
 			top: 12%;
+			animation: ani-swing 2s infinite alternate ease-in-out;
 		}
 		.oreo9{
 			left: 90%;
 			top: 6%;
+			animation: ani-far-swing 2s infinite alternate ease-in-out;
+		}
+
+		@keyframes ani-swing {
+			0% { 
+				transform: rotate(-2deg)
+			}
+			100% { 
+				transform: rotate(3deg) 
+			}
+		}
+
+		@keyframes ani-far-swing {
+			0% { 
+				transform: rotate(0deg)
+			}
+			100% { 
+				transform: rotate(3deg) 
+			}
+		}
+
+		@keyframes ani-reverse-swing {
+			0% { 
+				transform: rotate(3deg)
+			}
+			100% { 
+				transform: rotate(-3deg) 
+			}
 		}
 	}
 }
