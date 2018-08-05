@@ -416,14 +416,21 @@ section {
 	position: absolute;
 	width: 9%;
 	z-index: 100;
-	transform-style: preserve-3d;
-	transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
-	transition: .5s;
+	animation: ani-swing 2s infinite alternate ease-in-out;
+}
+
+@keyframes ani-swing {
+	0% {
+		transform: rotate(-2deg);
+	}
+	100% {
+		transform: rotate(3deg);
+	}
 }
 
 .flavorSect a .oreo:hover {
-	transform: rotate3d(1, 0, 1, 10deg) translate3d(0, 1px, 20px);
 	cursor: pointer;
+	animation-play-state: paused;
 }
 
 .flavorSect a .oreo1 {

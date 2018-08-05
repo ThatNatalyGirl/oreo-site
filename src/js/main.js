@@ -33,4 +33,4 @@ nav.addEventListener("mouseout", function(){
 	new ScrollMagic.Scene({triggerElement: ".game2Sect"})
 		.setClassToggle(".logo", "is-dunking") // add class toggle
 		.addTo(controller);
-  })();
+})();
