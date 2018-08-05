@@ -77,7 +77,7 @@ header{
 	}
 
 	img.is-dunking{
-		animation: ani-falling linear 5s infinite;
+		animation: ani-falling linear 4s forwards;
 		@keyframes ani-falling {
 			0% {
 			  background-position: 0px;
