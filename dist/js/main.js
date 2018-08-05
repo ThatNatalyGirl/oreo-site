@@ -31,11 +31,7 @@ nav.addEventListener("mouseout", function () {
 
 	new ScrollMagic.Scene({ triggerElement: ".videoSect" }).setClassToggle(".logo", "is-smaller") // add class toggle
 	.addTo(controller);
-	// new ScrollMagic.Scene({triggerElement: ".skills"})
-	// 	.setClassToggle(".skills", "active") // add class toggle
-	// 	.addTo(controller);
-	// new ScrollMagic.Scene({triggerElement: ".work"})
-	// 	.setClassToggle(".work", "active") // add class toggle
-	// 	.addTo(controller);
+	new ScrollMagic.Scene({ triggerElement: ".game2Sect" }).setClassToggle(".logo", "is-dunking") // add class toggle
+	.addTo(controller);
 })();
 //# sourceMappingURL=main.js.map

@@ -108,6 +108,10 @@ header img.is-smaller {
 	margin: 0 46%;
 }
 
+header img.is-dunking {
+	opacity: .2;
+}
+
 header .clouds {
 	width: 600%;
 	position: absolute;
