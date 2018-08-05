@@ -34,3 +34,8 @@ nav.addEventListener("mouseout", function(){
 		.setClassToggle(".logo", "is-dunking") // add class toggle
 		.addTo(controller);
 })();
+
+let tt1 = new Tooltip({
+    text: 'Hello World',
+    selector: '#lorem',
+})

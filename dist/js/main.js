@@ -34,4 +34,9 @@ nav.addEventListener("mouseout", function () {
 	new ScrollMagic.Scene({ triggerElement: ".game2Sect" }).setClassToggle(".logo", "is-dunking") // add class toggle
 	.addTo(controller);
 })();
+
+var tt1 = new Tooltip({
+	text: 'Hello World',
+	selector: '#lorem'
+});
 //# sourceMappingURL=main.js.map
