@@ -77,20 +77,20 @@ header{
 	}
 
 	img.is-dunking{
-		animation: ani-falling linear 4s forwards;
+		animation: ani-falling linear 4s 2s forwards;
 
 		@keyframes ani-falling {
 		0% {
 			background-position: 0px;
 			transform: translateY(0px) rotate(0deg);
 			opacity: 1;
-		}
+			}
 		100% {
 			background-position: -864px;
 			transform: translateY(550px) rotate(180deg);
 			opacity: 0;
+			}
 		}
-	}
 	}
 
 	.clouds{

@@ -109,7 +109,7 @@ header img.is-smaller {
 }
 
 header img.is-dunking {
-	animation: ani-falling linear 4s forwards;
+	animation: ani-falling linear 4s 2s forwards;
 }
 
 @keyframes ani-falling {
