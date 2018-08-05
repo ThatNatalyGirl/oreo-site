@@ -24,7 +24,7 @@ class Tooltip {
 		this.$tooltip.style.zIndex = 6000;
 		
 		this.$triggerElement.addEventListener('mouseover', this.showTooltip.bind(this))
-		// this.$triggerElement.addEventListener('mouseout', this.hideTooltip.bind(this))
+		this.$triggerElement.addEventListener('mouseout', this.hideTooltip.bind(this))
 
 	}
 	

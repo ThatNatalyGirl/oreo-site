@@ -36,6 +36,47 @@ nav.addEventListener("mouseout", function(){
 })();
 
 let tt1 = new Tooltip({
-    text: 'Hello World',
-    selector: '#lorem',
+    text: 'Strawberry Shortcake',
+    selector: '#shortcake',
 })
+
+let tt2 = new Tooltip({
+    text: 'Golden',
+    selector: '#golden',
+})
+
+let tt3 = new Tooltip({
+    text: 'Peanut Butter',
+    selector: '#pb',
+})
+
+let tt4 = new Tooltip({
+    text: 'Red Velvet',
+    selector: '#redvelvet',
+})
+
+let tt5 = new Tooltip({
+    text: 'Mint Chocolate',
+    selector: '#mint',
+})
+
+let tt6 = new Tooltip({
+    text: 'Birthday Cake',
+    selector: '#bday',
+})
+
+let tt7 = new Tooltip({
+    text: 'Pumpkin Spice',
+    selector: '#pspice',
+})
+
+let tt8 = new Tooltip({
+    text: 'Classic',
+    selector: '#orig',
+})
+
+let tt9 = new Tooltip({
+    text: 'Lemon',
+    selector: '#lemon',
+})
+
