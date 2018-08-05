@@ -69,8 +69,12 @@ header{
 		opacity: 100;
 	}
 
-	.is-smaller{
-		opacity: .2;
+	img.is-smaller{
+		top: 0;
+		position: fixed;
+		z-index: 3000;
+		width: 10%;
+		transition: .25s;
 	}
 
 	.clouds{

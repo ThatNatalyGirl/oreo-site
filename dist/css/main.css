@@ -100,8 +100,12 @@ header .not-smaller {
 	opacity: 100;
 }
 
-header .is-smaller {
-	opacity: .2;
+header img.is-smaller {
+	top: 0;
+	position: fixed;
+	z-index: 3000;
+	width: 10%;
+	transition: .25s;
 }
 
 header .clouds {
