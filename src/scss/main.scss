@@ -61,8 +61,6 @@ header{
 		height: auto;
 		transition: .5s;
 		margin: 5% 40% 130px;
-		top: 0;
-
 	}
 
 	.not-smaller{
@@ -74,7 +72,8 @@ header{
 		position: fixed;
 		z-index: 3000;
 		width: 10%;
-		transition: .25s;
+		transition: .2s;
+		margin: 0 46%;
 	}
 
 	.clouds{

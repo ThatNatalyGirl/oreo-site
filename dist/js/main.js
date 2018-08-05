@@ -27,9 +27,9 @@ nav.addEventListener("mouseout", function () {
 });
 
 (function () {
-	var controller = new ScrollMagic.Controller({ reverse: true, offset: '800px' });
+	var controller = new ScrollMagic.Controller({ reverse: true, offset: '0px' });
 
-	new ScrollMagic.Scene({ triggerElement: ".trigger" }).setClassToggle(".logo", "is-smaller") // add class toggle
+	new ScrollMagic.Scene({ triggerElement: ".videoSect" }).setClassToggle(".logo", "is-smaller") // add class toggle
 	.addTo(controller);
 	// new ScrollMagic.Scene({triggerElement: ".skills"})
 	// 	.setClassToggle(".skills", "active") // add class toggle

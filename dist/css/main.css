@@ -93,7 +93,6 @@ header .logo {
 	height: auto;
 	transition: .5s;
 	margin: 5% 40% 130px;
-	top: 0;
 }
 
 header .not-smaller {
@@ -105,7 +104,8 @@ header img.is-smaller {
 	position: fixed;
 	z-index: 3000;
 	width: 10%;
-	transition: .25s;
+	transition: .2s;
+	margin: 0 46%;
 }
 
 header .clouds {
