@@ -61,4 +61,4 @@ var Tooltip = function () {
 // let tooltip = function(options) {
 
 // }
-//# sourceMappingURL=tooltip.js.map
+//# sourceMappingURL=tooltip copy.js.map

@@ -35,7 +35,7 @@ nav.addEventListener("mouseout", function(){
 		.addTo(controller);
 })();
 
-let tt1 = new Tooltip({
+let tt1 = new TooltipFirst({
     text: 'Strawberry Shortcake',
     selector: '#shortcake',
 })

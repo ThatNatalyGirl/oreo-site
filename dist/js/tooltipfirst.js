@@ -4,9 +4,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Tooltip = function () {
-	function Tooltip(options) {
-		_classCallCheck(this, Tooltip);
+var TooltipFirst = function () {
+	function TooltipFirst(options) {
+		_classCallCheck(this, TooltipFirst);
 
 		// options.background = options.background || '#42dcf4';
 
@@ -34,12 +34,12 @@ var Tooltip = function () {
 		this.$triggerElement.addEventListener('mouseout', this.hideTooltip.bind(this));
 	}
 
-	_createClass(Tooltip, [{
+	_createClass(TooltipFirst, [{
 		key: 'showTooltip',
 		value: function showTooltip() {
 			console.log('show tooltip');
-			this.$tooltip.style.left = this.$triggerElement.getBoundingClientRect().right + window.scrollX - 100 + "px";
-			this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top + window.scrollY + 100 + "px";
+			this.$tooltip.style.left = this.$triggerElement.getBoundingClientRect().right + window.scrollX + "px";
+			this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top + window.scrollY + "px";
 			this.$tooltip.style.opacity = 1;
 			// setTimeout(() => {
 			// 	this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top - 10 + "px";
@@ -55,10 +55,10 @@ var Tooltip = function () {
 		}
 	}]);
 
-	return Tooltip;
+	return TooltipFirst;
 }();
 
 // let tooltip = function(options) {
 
 // }
-//# sourceMappingURL=tooltip.js.map
+//# sourceMappingURL=tooltipfirst.js.map
