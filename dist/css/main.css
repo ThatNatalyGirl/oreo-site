@@ -801,4 +801,11 @@ section {
 	}
 }
 
+.whack-a-mole {
+	background-image: url(../img/whack-background.png);
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

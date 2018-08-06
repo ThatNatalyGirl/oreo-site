@@ -24,6 +24,7 @@ nav.addEventListener("mouseout", function(){
 	ladder.style.display = "none";
 });
 
+//ScrollMagic Triggers
 (function () {
 	var controller = new ScrollMagic.Controller({reverse:true, offset: '0px'});
   
@@ -35,6 +36,8 @@ nav.addEventListener("mouseout", function(){
 		.addTo(controller);
 })();
 
+
+//Flavor Oreo Tooltips
 let tt1 = new TooltipFirst({
     text: 'Strawberry Shortcake',
     selector: '#shortcake',
