@@ -82,4 +82,3 @@ let tt9 = new Tooltip({
     text: 'Lemon',
     selector: '#lemon',
 })
-

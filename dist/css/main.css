@@ -808,4 +808,51 @@ section {
 	width: 100%;
 }
 
+.whack-a-mole .score {
+	background: rgba(255, 255, 255, 0.2);
+	padding: 0 3rem;
+	line-height: 1;
+	border-radius: 1rem;
+}
+
+.whack-a-mole .game {
+	width: 600px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.whack-a-mole .milk {
+	flex: 1 0 33.33%;
+	overflow: hidden;
+	position: relative;
+}
+
+.whack-a-mole .milk:after {
+	display: block;
+	background: url(../img/dirt.svg) bottom center no-repeat;
+	background-size: contain;
+	content: '';
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	z-index: 2;
+	bottom: -30px;
+}
+
+.whack-a-mole .oreo-game {
+	background: url(../img/oreo-char.png) bottom center no-repeat;
+	background-size: 60%;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+}
+
+.whack-a-mole .milk.up .oreo-game {
+	top: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
