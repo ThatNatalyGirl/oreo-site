@@ -378,7 +378,7 @@ section {
 }
 
 .flavorSect a .oreo:hover {
-	transform: rotate3d(1, 0, 1, 10deg) translate3d(0, 1px, 20px);
+	transform: rotate3d(1, 0, 1, 10deg) translate3d(-1px, 1px, 20px);
 	cursor: pointer;
 }
 

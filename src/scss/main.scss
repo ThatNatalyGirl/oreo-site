@@ -327,7 +327,7 @@ section{
 			transition: .5s;
 
 			&:hover{
-			transform: rotate3d(1, 0, 1, 10deg) translate3d(0, 1px, 20px);	
+			transform: rotate3d(1, 0, 1, 10deg) translate3d(-1px, 1px, 20px);	
 			cursor: pointer
 			}
 		}
@@ -624,3 +624,326 @@ section{
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+////GAME 1////
+#game1{
+	background: url(../img/stage.png) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+
+	section{
+		perspective: 1900px;
+		perspective-origin: center;
+		
+		a{
+			position: absolute;
+			transition: .3s;
+			width: 2%;
+			height: 0;
+			padding-bottom: 5%;
+		}
+
+		ul{
+			position: absolute;
+			width: 320px;
+			height: 320px;
+			margin: 40px 0 60px -160px; /*we're pulling it back by half itself*/
+			left: 50%;
+			backface-visibility: hidden;
+			border: 5px solid #000;
+
+			li{
+				position: absolute;
+				width: 320px;
+				height: 320px;
+				margin: 40px 0 60px -160px; /*we're pulling it back by half itself*/
+				left: 50%;
+
+				backface-visibility: hidden;
+				border: 5px solid #000;
+			}
+		}		
+
+		.next{
+			background: url(../img/game-arrow2.png) no-repeat center;
+			right: 30%;
+			background-size: 100%;	
+		}
+
+		.previous{
+			background: url(../img/game-arrow.png) no-repeat center;
+			background-size: 100%;
+			left: 30%;
+		}
+
+		a:hover{
+			transition: .5s;
+			filter: sepia(80%);
+			cursor: pointer;
+		}
+	}
+
+	.head{
+		a{
+			top: 100px;
+		}
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/afro.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/bee-hat.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/fishing-hat.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/headphones.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/pigtails.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/purple-hair.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/spikey-hair.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/yellow-hair.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+		}
+	}
+	.face{
+		a{
+			top: 175px;
+		}
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/green-oreo.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/green-oreo.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/green-oreo.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/green-oreo.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+		}
+	}
+	.chin{
+		a{
+			top: 250px;
+		}
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/pink-beard.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/pink-beard.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/pink-beard.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/pink-beard.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+		}
+	}
+	.top{
+		a{
+			top: 400px;
+		}
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/monster-top.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/monster-top.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/monster-top.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/monster-top.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+		}
+	}
+	.bottom{
+		a{
+			top: 550px;
+		}
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/robot-bottom.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/robot-bottom.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/robot-bottom.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/robot-bottom.png) no-repeat;
+				transform: rotateY(36deg) translateZ(640px);
+				background-size: cover;
+			}
+		}
+	}
+
+	.options{
+
+	}
+}	
+
+	
+
+	// .image1{
+	// 	transform: rotateY(36deg) translateZ(640px);;
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image2{
+	// 	transform: rotateY(72deg) translateZ(640px);
+	// 	background: url(../img/img2.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image3{
+	// 	transform: rotateY(108deg) translateZ(640px);
+	// 	background: url(../img/img3.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image4{
+	// 	transform: rotateY(144deg) translateZ(640px);
+	// 	background: url(../img/img4.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image5{
+	// 	transform: rotateY(180deg) translateZ(640px);
+	// 	background: url(../img/img5.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image6{
+	// 	transform: rotateY(216deg) translateZ(640px);
+	// 	background: url(../img/img6.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image7{
+	// 	transform: rotateY(252deg) translateZ(640px);
+	// 	background: url(../img/img7.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image8{
+	// 	transform: rotateY(288deg) translateZ(640px);
+	// 	background: url(../img/img9.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image9{
+	// 	transform: rotateY(324deg) translateZ(640px);
+	// 	background: url(../img/img10.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// .image10{
+	// 	transform: rotateY(360deg) translateZ(640px);
+	// 	background: url(../img/img11.jpg);
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+// }
+
+
