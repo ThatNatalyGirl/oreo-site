@@ -26,7 +26,7 @@ nav.addEventListener("mouseout", function () {
     ladder.style.display = "none";
 });
 
-//ScrollMagic Triggers
+//oreo flavors showing
 (function () {
     var controller = new ScrollMagic.Controller({ reverse: true, offset: '0px' });
 
