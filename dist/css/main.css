@@ -106,7 +106,6 @@ header img.is-smaller {
 	position: fixed;
 	z-index: 3000;
 	width: 10%;
-	transition: .2s;
 	margin: 0 46%;
 }
 
