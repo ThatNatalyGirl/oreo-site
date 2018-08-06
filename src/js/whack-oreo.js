@@ -47,5 +47,6 @@ let bonk = function(e) {
 	scoreBoard.textContent = score;
 }
 
+
 moles.forEach(mole => mole.addEventListener('click', bonk));
 start.addEventListener('click', startGame);
