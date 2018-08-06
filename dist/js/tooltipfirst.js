@@ -39,7 +39,7 @@ var TooltipFirst = function () {
 		value: function showTooltip() {
 			console.log('show tooltip');
 			this.$tooltip.style.left = this.$triggerElement.getBoundingClientRect().right + window.scrollX + "px";
-			this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top + window.scrollY + "px";
+			this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top + window.scrollY + 100 + "px";
 			this.$tooltip.style.opacity = 1;
 			// setTimeout(() => {
 			// 	this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top - 10 + "px";
