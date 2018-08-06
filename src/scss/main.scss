@@ -20,6 +20,7 @@
 	left: 0;
 	width: 100%;
 	min-height: 550px;
+	pointer-events: none;
 }
 
 /* 1. Main Layout ================================= */
@@ -61,8 +62,6 @@ header{
 		height: auto;
 		transition: .5s;
 		margin: 5% 40% 130px;
-		position: fixed;
-		z-index: 3000;
 	}
 
 	.not-smaller{
@@ -74,7 +73,7 @@ header{
 		position: fixed;
 		z-index: 3000;
 		width: 10%;
-		// transition: .2s;
+		transition: .2s;
 		margin: 0 46%;
 	}
 
@@ -219,6 +218,7 @@ header{
 	width: 100%;
 	height: 500px;
 	transition: .5s;
+	pointer-events: none;
 
 	.dark-green{
 		position: absolute;
@@ -237,6 +237,7 @@ header{
 		right: 0;
 		width: 20%;
 		min-height: 550px;
+		pointer-events: none;
 	}
 }
 
@@ -716,113 +717,342 @@ section{
 	}
 }
 
-/////WHACK-A-MOLE/////////
 
-.whack-a-mole{
-	background-image:url(../img/whack-background.png);
-	background-size: cover;
+
+
+
+
+
+
+
+////////////////////////////
+////GAME 1////
+.gameBg{
+	background: #f9c2c2;
+}
+
+#game1{
+	background: url(../img/stage.png) top no-repeat;
+	background-size: 100%;
 	height: 100vh;
 	width: 100%;
 
-	h1 {
-		text-align: center;
-		font-size: 3.5em;
-		line-height:1;
-		margin-bottom: 0;
-		font-family: chewy;
-	}
-
-	.score {
-		background:rgba(255,255,255,0.2);
-		padding:0 3rem;
-		line-height:1;
-		border-radius:1rem;
-	}
-
-	.game {
-		width:600px;
-		height:400px;
-		display:flex;
-		flex-wrap:wrap;
-		margin:0 auto;
-	}
-
-	.milk {
-		flex: 1 0 33.33%;
-		position: relative;
-
-		&:after {
-			display: block;
-			background: url(../img/bototm-layer-milk.png) bottom center no-repeat;
-			background-size:contain;
-			content:'';
-			width: 100%;
-			height:200px;
-			position: absolute;
-			bottom:-205px;
-		}
-	}
-
-	.oreo-game {
-		background:url(../img/oreo-char.png) bottom center no-repeat;
-		background-size:50%;
+	section{
 		position: absolute;
-		top: 100%;
+		top: 0;
+		perspective: 4900px;
+		perspective-origin: center;
 		width: 100%;
-		height: 100%;
-		transition:all 0.4s;
+		height: 100vh;
 		overflow: hidden;
-	}
 
-	.milk.up .oreo-game {
-		top:0;
-	}
-
-	.intro{
-		display: flex;
-		justify-content: center;
-	}
-
-	.startGame {
-		-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-		-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-		box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5));
-		background:-moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
-		background:-webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
-		background:-o-linear-gradient(top, #79bbff 5%, #378de5 100%);
-		background:-ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
-		background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
-		background-color:#79bbff;
-		-moz-border-radius:6px;
-		-webkit-border-radius:6px;
-		border-radius:6px;
-		border:1px solid #84bbf3;
-		display:inline-block;
-		cursor:pointer;
-		color:#ffffff;
-		font-family:Arial;
-		font-size:15px;
-		font-weight:bold;
-		padding:6px 24px;
-		text-decoration:none;
-		text-shadow:0px 1px 0px #528ecc;
-	
-		&:hover {
-			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
-			background:-moz-linear-gradient(top, #378de5 5%, #79bbff 100%);
-			background:-webkit-linear-gradient(top, #378de5 5%, #79bbff 100%);
-			background:-o-linear-gradient(top, #378de5 5%, #79bbff 100%);
-			background:-ms-linear-gradient(top, #378de5 5%, #79bbff 100%);
-			background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
-			background-color:#378de5;
+		a{
+			position: absolute;
+			transition: .3s;
+			width: 1.3%;
+			height: 0;
+			padding-bottom: 50px;
+			top: 25%;
+			
+			&:hover{
+				transition: .3s;
+				filter: sepia(80%);
+				cursor: pointer;
+			}
 		}
 
+		.next{
+			background: url(../img/game-arrow2.png) no-repeat center;
+			background-size: 100%;	
+			right: 35%;
+			z-index: 100;
+		}
+
+		.previous{
+			background: url(../img/game-arrow.png) no-repeat center;
+			background-size: 100%;
+			left: 35%;
+			z-index: 100;
+		}
+
+		ul{
+			position: absolute;
+			width: 54%;
+			left: 23%;
+			top: 0%;
+			height: 0;
+			padding-bottom: 60%;
+			transition: transform .8s;
+		    transform: rotateY(0deg);
+	        transform-style: preserve-3d;
+
+			li{
+				position: absolute;
+				width: 50%;
+				left: 25%;
+				top: 0;
+				height: 0;
+				margin-top: 40px;
+				padding-bottom: 80%;
+				backface-visibility: hidden;
+			}
+		}		
+
+	}
+
+	.head{
+		a{
+			top: 7%;
+		}
+
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/afro.png) no-repeat;
+				transform: rotateY(0deg) translateZ(52vw);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/bee-hat.png) no-repeat;
+				transform: rotateY(45deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/fishing-hat.png) no-repeat;
+				transform: rotateY(90deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/headphones.png) no-repeat;
+				transform: rotateY(135deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image5{
+				background: url(../img/pigtails.png) no-repeat;
+				transform: rotateY(180deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image6{
+				background: url(../img/purple-hair.png) no-repeat;
+				transform: rotateY(225deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image7{
+				background: url(../img/spikey-hair.png) no-repeat;
+				transform: rotateY(270deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image8{
+				background: url(../img/yellow-hair.png) no-repeat;
+				transform: rotateY(315deg) translateZ(52vw);
+				background-size: cover;
+			}
+		}
+	}
+	.face{
+		a{
+			top: 12%;
+		}
+
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/green-oreo.png) no-repeat;
+				transform: rotateY(0deg) translateZ(52vw);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/blue-oreo.png) no-repeat;
+				transform: rotateY(72deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/pink-oreo.png) no-repeat;
+				transform: rotateY(144deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/red-oreo.png) no-repeat;
+				transform: rotateY(216deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image5{
+				background: url(../img/yellow-oreo.png) no-repeat;
+				transform: rotateY(288deg) translateZ(52vw);
+				background-size: cover;
+			}
+		}
+	}
+	.chin{
+		a{
+			top: 17%;
+		}
+
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/pink-beard.png) no-repeat;
+				transform: rotateY(0deg) translateZ(52vw);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/pink-mustache.png) no-repeat;
+				transform: rotateY(90deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/blue-beard.png) no-repeat;
+				transform: rotateY(180deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/yellow-mustache.png) no-repeat;
+				transform: rotateY(270deg) translateZ(52vw);
+				background-size: cover;
+			}
+		}
+	}
+	.top{
+		a{
+			top: 25%;
+		}
+
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/monster-top.png) no-repeat;
+				transform: rotateY(0deg) translateZ(52vw);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/robot-top.png) no-repeat;
+				transform: rotateY(60deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/space-top.png) no-repeat;
+				transform: rotateY(120deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/vampire-top.png) no-repeat;
+				transform: rotateY(180deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image5{
+				background: url(../img/witch-top.png) no-repeat;
+				transform: rotateY(240deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image6{
+				background: url(../img/zombie-top.png) no-repeat;
+				transform: rotateY(300deg) translateZ(52vw);
+				background-size: cover;
+			}
+		}
+	}
+	.bottom{
+		a{
+			top: 35%;
+		}
+
+		ul{
+			li{
+
+			}
+			.image1{
+				background: url(../img/monster-bottom.png) no-repeat;
+				transform: rotateY(0deg) translateZ(52vw);
+				background-size: cover;
+			}
+
+			.image2{
+				background: url(../img/robot-bottom.png) no-repeat;
+				transform: rotateY(60deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image3{
+				background: url(../img/space-bottom.png) no-repeat;
+				transform: rotateY(120deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image4{
+				background: url(../img/vampire-bottom.png) no-repeat;
+				transform: rotateY(180deg) translateZ(52vw);
+				background-size: cover;
+			}
+			.image5{
+				background: url(../img/witch-bottom.png) no-repeat;
+				transform: rotateY(240deg) translateZ(52vw);
+				background-size: cover;
+
+				&:after{
+					content: '';
+					background: url(../img/witch-cape.png) no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 50px;
+					left: 50px;
+
+				}
+			}
+			.image6{
+				background: url(../img/zombie-bottom.png) no-repeat;
+				transform: rotateY(300deg) translateZ(52vw);
+				background-size: cover;
+			}
+		}
+	}
+
+	.curtain{
+		width: 100%;
+		// height: 0;
+		// padding-bottom: 100%;
+		.curtain-left{
+			left: 0;
+			position: absolute;
+			z-index: 10;
+			width: 23%;
+		}
+
+<<<<<<< HEAD
 		&:active {
 			position:relative;
 			top:1px;
+=======
+		.curtain-right{
+			right: 0;
+			position: absolute;
+			z-index: 10;
+			width: 23%;
+>>>>>>> 171e9360debe9d81d6ab88a9b510b5b68fcab463
 		}
 	}
-}
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
