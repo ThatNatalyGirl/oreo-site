@@ -724,235 +724,281 @@ section{
 
 
 ////GAME 1////
+.gameBg{
+	background: #f9c2c2;
+}
+
 #game1{
-	background: url(../img/stage.png) center no-repeat;
-	background-size: cover;
+	background: url(../img/stage.png) top no-repeat;
+	background-size: 100%;
 	height: 100vh;
 	width: 100%;
 
 	section{
-		perspective: 1900px;
+		perspective: 4900px;
 		perspective-origin: center;
 		
-		a{
-			position: absolute;
-			transition: .3s;
-			width: 2%;
-			height: 0;
-			padding-bottom: 5%;
-		}
 
 		ul{
 			position: absolute;
-			width: 320px;
-			height: 320px;
-			margin: 40px 0 60px -160px; /*we're pulling it back by half itself*/
-			left: 50%;
+			width: 50%;
+			left: 25%;
+			height: 0;
+			padding-bottom: 60%;
 			backface-visibility: hidden;
-			border: 5px solid #000;
+			overflow: hidden;
+
+			a{
+				position: absolute;
+				transition: .3s;
+				width: 3%;
+				height: 5%;
+				// padding-bottom: 110px;
+				
+				&:hover{
+					transition: .3s;
+					filter: sepia(80%);
+					cursor: pointer;
+				}
+			}
 
 			li{
 				position: absolute;
-				width: 320px;
-				height: 320px;
-				margin: 40px 0 60px -160px; /*we're pulling it back by half itself*/
-				left: 50%;
+				width: 50%;
+				left: 25%;
+				height: 0;
+				margin-top: 40px;
+				padding-bottom: 80%;
 
 				backface-visibility: hidden;
-				border: 5px solid #000;
+			}
+			
+			.next{
+				background: url(../img/game-arrow2.png) no-repeat center;
+				right: 15%;
+				background-size: 100%;	
+			}
+
+			.previous{
+				background: url(../img/game-arrow.png) no-repeat center;
+				background-size: 100%;
+				left: 15%;
 			}
 		}		
 
-		.next{
-			background: url(../img/game-arrow2.png) no-repeat center;
-			right: 30%;
-			background-size: 100%;	
-		}
-
-		.previous{
-			background: url(../img/game-arrow.png) no-repeat center;
-			background-size: 100%;
-			left: 30%;
-		}
-
-		a:hover{
-			transition: .5s;
-			filter: sepia(80%);
-			cursor: pointer;
-		}
 	}
 
 	.head{
 		a{
-			top: 100px;
+			top: 10%;
 		}
+
 		ul{
 			li{
 
 			}
 			.image1{
 				background: url(../img/afro.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(0deg) translateZ(640px);
 				background-size: cover;
 			}
 
 			.image2{
 				background: url(../img/bee-hat.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(45deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image3{
 				background: url(../img/fishing-hat.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(90deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image4{
 				background: url(../img/headphones.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(135deg) translateZ(640px);
 				background-size: cover;
 			}
-			.image4{
+			.image5{
 				background: url(../img/pigtails.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(180deg) translateZ(640px);
 				background-size: cover;
 			}
-			.image4{
+			.image6{
 				background: url(../img/purple-hair.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(225deg) translateZ(640px);
 				background-size: cover;
 			}
-			.image4{
+			.image7{
 				background: url(../img/spikey-hair.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(270deg) translateZ(640px);
 				background-size: cover;
 			}
-			.image4{
+			.image8{
 				background: url(../img/yellow-hair.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(315deg) translateZ(640px);
 				background-size: cover;
 			}
 		}
 	}
 	.face{
 		a{
-			top: 175px;
+			top: 15%;
 		}
+
 		ul{
 			li{
 
 			}
 			.image1{
 				background: url(../img/green-oreo.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(0deg) translateZ(640px);
 				background-size: cover;
 			}
 
 			.image2{
-				background: url(../img/green-oreo.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/blue-oreo.png) no-repeat;
+				transform: rotateY(72deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image3{
-				background: url(../img/green-oreo.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/pink-oreo.png) no-repeat;
+				transform: rotateY(144deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image4{
-				background: url(../img/green-oreo.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/red-oreo.png) no-repeat;
+				transform: rotateY(216deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image5{
+				background: url(../img/yellow-oreo.png) no-repeat;
+				transform: rotateY(288deg) translateZ(640px);
 				background-size: cover;
 			}
 		}
 	}
 	.chin{
 		a{
-			top: 250px;
+			top: 20%;
 		}
+
 		ul{
 			li{
 
 			}
 			.image1{
 				background: url(../img/pink-beard.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(0deg) translateZ(640px);
 				background-size: cover;
 			}
 
 			.image2{
-				background: url(../img/pink-beard.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/pink-mustache.png) no-repeat;
+				transform: rotateY(90deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image3{
-				background: url(../img/pink-beard.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/blue-beard.png) no-repeat;
+				transform: rotateY(180deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image4{
-				background: url(../img/pink-beard.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/yellow-mustache.png) no-repeat;
+				transform: rotateY(270deg) translateZ(640px);
 				background-size: cover;
 			}
 		}
 	}
 	.top{
 		a{
-			top: 400px;
+			top: 35%;
 		}
+
 		ul{
 			li{
 
 			}
 			.image1{
 				background: url(../img/monster-top.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(0deg) translateZ(640px);
 				background-size: cover;
 			}
 
 			.image2{
-				background: url(../img/monster-top.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/robot-top.png) no-repeat;
+				transform: rotateY(60deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image3{
-				background: url(../img/monster-top.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/space-top.png) no-repeat;
+				transform: rotateY(120deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image4{
-				background: url(../img/monster-top.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/vampire-top.png) no-repeat;
+				transform: rotateY(180deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image5{
+				background: url(../img/witch-top.png) no-repeat;
+				transform: rotateY(240deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image6{
+				background: url(../img/zombie-top.png) no-repeat;
+				transform: rotateY(300deg) translateZ(640px);
 				background-size: cover;
 			}
 		}
 	}
 	.bottom{
 		a{
-			top: 550px;
+			top: 50%;
 		}
+		
 		ul{
 			li{
 
 			}
 			.image1{
-				background: url(../img/robot-bottom.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/monster-bottom.png) no-repeat;
+				transform: rotateY(0deg) translateZ(640px);
 				background-size: cover;
 			}
 
 			.image2{
 				background: url(../img/robot-bottom.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				transform: rotateY(60deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image3{
-				background: url(../img/robot-bottom.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/space-bottom.png) no-repeat;
+				transform: rotateY(120deg) translateZ(640px);
 				background-size: cover;
 			}
 			.image4{
-				background: url(../img/robot-bottom.png) no-repeat;
-				transform: rotateY(36deg) translateZ(640px);
+				background: url(../img/vampire-bottom.png) no-repeat;
+				transform: rotateY(180deg) translateZ(640px);
+				background-size: cover;
+			}
+			.image5{
+				background: url(../img/witch-bottom.png) no-repeat;
+				transform: rotateY(240deg) translateZ(640px);
+				background-size: cover;
+
+				&:after{
+					content: '';
+					background: url(../img/witch-cape.png) no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 50px;
+					left: 50px;
+
+				}
+			}
+			.image6{
+				background: url(../img/zombie-bottom.png) no-repeat;
+				transform: rotateY(300deg) translateZ(640px);
 				background-size: cover;
 			}
 		}
@@ -1034,6 +1080,7 @@ section{
 	// 	background-repeat: no-repeat;
 	// }
 // }
+
 
 
 
