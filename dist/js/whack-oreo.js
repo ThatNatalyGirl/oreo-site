@@ -4,6 +4,7 @@ var holes = document.querySelectorAll('.milk');
 var scoreBoard = document.querySelector('.score');
 var moles = document.querySelectorAll('.oreo-game');
 var start = document.querySelector('.startGame');
+
 var lastHole = void 0;
 var timeUp = false;
 var score = 0;
@@ -41,6 +42,7 @@ function startGame() {
 function bonk(e) {
   if (!e.isTrusted) return; // cheater!
   score++;
+  console.log('am i a baddie?');
   this.parentNode.classList.remove('up');
   scoreBoard.textContent = score;
 }

@@ -2,6 +2,7 @@ const holes = document.querySelectorAll('.milk');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.oreo-game');
   const start = document.querySelector('.startGame');
+
   let lastHole;
   let timeUp = false;
   let score = 0;
@@ -38,8 +39,9 @@ const holes = document.querySelectorAll('.milk');
   function bonk(e) {
     if(!e.isTrusted) return; // cheater!
     score++;
+    console.log('am i a baddie?')
     this.parentNode.classList.remove('up');
     scoreBoard.textContent = score;
   }
-  moles.forEach(mole => mole.addEventListener('click', bonk));
+moles.forEach(mole => mole.addEventListener('click', bonk));
 start.addEventListener('click', startGame);
