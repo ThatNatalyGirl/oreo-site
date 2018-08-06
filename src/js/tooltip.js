@@ -30,8 +30,8 @@ class Tooltip {
 	
 	showTooltip() {
 		console.log('show tooltip')
-		this.$tooltip.style.left = /*this.$triggerElement.getBoundingClientRect().right +*/ 100 + "px";
-		this.$tooltip.style.top = /*this.$triggerElement.getBoundingClientRect().top + */ 205 + "%";
+		this.$tooltip.style.left = this.$triggerElement.getBoundingClientRect().right + window.scrollX - 100 + "px";
+		this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top + window.scrollY + 100 + "px";
 		this.$tooltip.style.opacity = 1;
 		// setTimeout(() => {
 		// 	this.$tooltip.style.top = this.$triggerElement.getBoundingClientRect().top - 10 + "px";
