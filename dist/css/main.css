@@ -93,6 +93,8 @@ header .logo {
 	height: auto;
 	transition: .5s;
 	margin: 5% 40% 130px;
+	position: fixed;
+	z-index: 3000;
 }
 
 header .not-smaller {
