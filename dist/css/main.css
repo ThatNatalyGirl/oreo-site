@@ -93,10 +93,11 @@ header .logo {
 	height: auto;
 	transition: .5s;
 	margin: 5% 40% 130px;
+	z-index: 5;
 	position: fixed;
 }
 
-header .logo .no-z-index {
+header .logo.no-z-index {
 	z-index: -1;
 }
 
@@ -107,45 +108,37 @@ header .cloud-cluster {
 
 header .cloud-cluster .cloud {
 	width: 300px;
-	opacity: 0;
 }
 
 header .cloud-cluster .cloud-1 {
-	animation: ani-scroll 25s infinite;
+	animation: ani-scroll 50s infinite linear;
+	opacity: 0.5;
+	width: 200px;
 }
 
 header .cloud-cluster .cloud-2 {
-	animation: ani-scroll 25s 5s infinite;
+	animation: ani-scroll 35s 2s infinite linear;
+	opacity: 0.6;
+	width: 240px;
 }
 
 header .cloud-cluster .cloud-3 {
-	animation: ani-scroll 25s 8s infinite;
+	animation: ani-scroll 25s 8s infinite linear;
+	opacity: 0.7;
+	width: 280px;
 }
 
 header .cloud-cluster .cloud-4 {
-	animation: ani-scroll 10s 9s infinite;
+	animation: ani-scroll 20s 15s infinite linear;
+	opacity: 0.8;
 }
 
 @keyframes ani-scroll {
 	0% {
 		transform: translateX(-300px);
-		opacity: 0;
-	}
-	10% {
-		opacity: .3;
-	}
-	25% {
-		opacity: 1;
-	}
-	50% {
-		transform: translateX(1500px);
-		opacity: .3;
-	}
-	75% {
-		opacity: 1;
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateX(1500px);
 	}
 }
 
@@ -1446,6 +1439,7 @@ section {
 	width: 25%;
 	height: 25%;
 	transform: rotate(-25deg);
+	animation: ani-reverse-swing 2s infinite alternate ease-in-out;
 }
 
 .game-info .game-char {
@@ -1454,6 +1448,7 @@ section {
 	transform: rotate(15deg);
 	position: relative;
 	top: -70px;
+	animation: ani-swing 2s infinite alternate ease-in-out;
 }
 
 @media screen and (min-width: 740px) {
