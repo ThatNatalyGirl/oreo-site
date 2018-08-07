@@ -195,10 +195,10 @@ header nav {
 	position: absolute;
 	height: 20px;
 	right: 0;
-	top: 20px;
+	top: 0px;
 	font-family: 'Chewy', cursive;
 	transform: translate(0px, 0px);
-	animation: ani-balloon 20s ease-out infinite;
+	animation: none;
 }
 
 @keyframes ani-balloon {
@@ -218,7 +218,7 @@ header nav {
 		transform: translate(-30px, -15px);
 	}
 	75% {
-		transform: translate(-50px, 0px);
+		transform: translate(-40px, 0px);
 	}
 	90% {
 		transform: translate(-20px, 10px);
@@ -231,9 +231,10 @@ header nav {
 header nav h3 {
 	position: absolute;
 	font-size: 2.2vw;
-	top: 35px;
-	right: 35%;
+	top: 130%;
+	right: 40%;
 	color: #fff;
+	transition: .2s;
 }
 
 header nav .ladder {
@@ -248,7 +249,7 @@ header nav ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	line-height: 30px;
+	line-height: 0.5em;
 	margin-top: -15px;
 	z-index: 2;
 }
@@ -377,6 +378,17 @@ section {
 	margin-top: -1%;
 	left: 1%;
 	width: 8%;
+	transform: translate(0px, 0px) rotate(-2deg);
+	animation: ani-vineL 3s infinite alternate ease-in-out;
+}
+
+@keyframes ani-vineL {
+	0% {
+		transform: translate(0px, 5px) rotate(5deg);
+	}
+	100% {
+		transform: translate(2px, 0px) rotate(2deg);
+	}
 }
 
 .videoSect .sideGreen {
@@ -648,6 +660,17 @@ section {
 	top: 38%;
 	right: 5%;
 	width: 8%;
+	transform: translate(0px, 0px) rotate(-4deg);
+	animation: ani-vineR 3s infinite alternate ease-in-out;
+}
+
+@keyframes ani-vineR {
+	0% {
+		transform: translate(0px, 5px) rotate(-2deg);
+	}
+	100% {
+		transform: translate(-4px, 2px) rotate(2deg);
+	}
 }
 
 .recipeSect .rightPlant2 {
@@ -702,7 +725,7 @@ section {
 	left: 28%;
 	height: 0;
 	padding-bottom: 31%;
-	top: 15%;
+	top: 21%;
 }
 
 .recipeSect .book .page-1 {
@@ -923,6 +946,68 @@ section {
 	left: 41%;
 }
 
+<<<<<<< HEAD
+@media screen and (min-width: 620px) {
+	header nav h3 {
+		top: 130%;
+		right: 35%;
+	}
+	header nav ul {
+		line-height: 1em;
+	}
+	.recipeSect .book .page {
+		top: 15%;
+	}
+}
+
+@media screen and (min-width: 876px) {
+	header .logo {
+		width: 20%;
+		height: auto;
+		margin: 7% 42.5%;
+		transition: .5s;
+	}
+	header .clouds {
+		width: 400%;
+	}
+	header nav {
+		top: 10px;
+		animation: ani-balloon 20s ease-out infinite;
+	}
+	header nav h3 {
+		top: 160%;
+		right: 35%;
+	}
+	header nav .ladder {
+		top: 29px;
+	}
+	header nav ul {
+		line-height: 1.6em;
+	}
+	iframe {
+		border-radius: 15px;
+		box-shadow: 0 0 0 10px #f16f43, 0 0 0 30px #ee4623, 0px 10px 80px 35px rgba(0, 0, 0, 0.35);
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	header .clouds {
+		width: 300%;
+	}
+	header nav h3 {
+		top: 200%;
+		right: 33%;
+	}
+	iframe {
+		box-shadow: 0 0 0 20px #f16f43, 0 0 0 60px #ee4623, 0px 10px 80px 65px rgba(0, 0, 0, 0.35);
+	}
+	.recipeSect .book .page {
+		top: 12%;
+	}
+}
+
+=======
+>>>>>>> c47b9c6d8075d624fa07e21953bc874ae48ec4fb
 .gameBg {
 	background: #f9c2c2;
 }
