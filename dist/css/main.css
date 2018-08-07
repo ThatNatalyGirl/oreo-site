@@ -93,7 +93,6 @@ header .logo {
 	height: auto;
 	transition: .5s;
 	margin: 5% 40% 130px;
-	z-index: 3000;
 	position: fixed;
 }
 
@@ -146,8 +145,18 @@ header .cloud-cluster .cloud-4 {
 	}
 }
 
-header .not-smaller {
-	opacity: 100;
+header .logo-moving {
+	width: 10%;
+	height: auto;
+	transition: .5s;
+	margin: 8% 47% 130px;
+	z-index: 3000;
+	position: fixed;
+	opacity: 0;
+}
+
+header .logo-moving .not-smaller {
+	opacity: 0;
 }
 
 header img.is-smaller {
@@ -157,6 +166,7 @@ header img.is-smaller {
 	width: 10%;
 	transition: .2s;
 	margin: 0 46%;
+	opacity: 1;
 }
 
 header img.is-dunking {

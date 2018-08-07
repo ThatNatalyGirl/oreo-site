@@ -62,7 +62,7 @@ header{
 		height: auto;
 		transition: .5s;
 		margin: 5% 40% 130px;
-		z-index: 3000;
+		// z-index: 3000;
 		position: fixed;
 	}
 
@@ -114,8 +114,18 @@ header{
 	
 
 
-	.not-smaller{
-		opacity: 100;
+	.logo-moving{
+		width: 10%;
+		height: auto;
+		transition: .5s;
+		margin: 8% 47% 130px;
+		z-index: 3000;
+		position: fixed;
+		opacity: 0;
+	
+		.not-smaller{
+		opacity: 0;
+		}
 	}
 
 	img.is-smaller{
@@ -125,6 +135,7 @@ header{
 		width: 10%;
 		transition: .2s;
 		margin: 0 46%;
+		opacity: 1;
 	}
 
 	img.is-dunking{
