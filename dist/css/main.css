@@ -587,7 +587,7 @@ section {
 
 .recipeSect .rightVine {
 	position: absolute;
-	margin-top: 18%;
+	top: 38%;
 	right: 5%;
 	width: 8%;
 }
@@ -610,23 +610,38 @@ section {
 
 .recipeSect .book .next {
 	position: absolute;
-	background: url(../img/game-arrow2.png) no-repeat center;
+	background: url(../img/arrow-R.png) no-repeat center;
 	background-size: 100%;
-	right: 35%;
+	right: 18%;
 	z-index: 100;
+	width: 3%;
+	height: 0;
+	padding: 5px 5px 30%;
+}
+
+.recipeSect .book .next:hover {
+	cursor: pointer;
 }
 
 .recipeSect .book .previous {
-	background: url(../img/game-arrow.png) no-repeat center;
+	position: absolute;
+	background: url(../img/arrow-L.png) no-repeat center;
 	background-size: 100%;
-	left: 35%;
+	left: 18%;
 	z-index: 100;
+	width: 3%;
+	height: 0;
+	padding: 5px 5px 30%;
+}
+
+.recipeSect .book .previous:hover {
+	cursor: pointer;
 }
 
 .recipeSect .book .page {
 	position: absolute;
 	width: 22%;
-	left: 29%;
+	left: 28%;
 	height: 0;
 	padding-bottom: 31%;
 	top: 15%;
@@ -641,20 +656,32 @@ section {
 	background: url(../img/right-page-1.png) no-repeat;
 	background-size: cover;
 	left: 50%;
+	transform-style: preserve-3d;
+	z-index: 4;
+	transition: 1.5s;
+	transform: rotateY(0deg);
+	transform-origin: left;
+	backface-visibility: hidden;
 }
 
 .recipeSect .book .page-3 {
 	background: url(../img/left-page-2.png) no-repeat;
 	background-size: cover;
-	left: 50%;
+	left: 28%;
 	padding-bottom: 30%;
+	transform-style: preserve-3d;
+	z-index: 4;
+	transition: 1.5s;
+	transform: rotateY(-180deg);
+	transform-origin: right;
+	backface-visibility: hidden;
 }
 
 .recipeSect .book .page-4 {
 	background: url(../img/right-page-2.png) no-repeat;
 	background-size: cover;
 	left: 51%;
-	padding-bottom: 30%;
+	z-index: 0;
 }
 
 .game1Sect {

@@ -39,46 +39,72 @@ nav.addEventListener("mouseout", function(){
 })();
 
 let tt1 = new Tooltip({
-    text: 'Strawberry Shortcake',
-    selector: '#shortcake',
+	text: 'Strawberry Shortcake',
+	selector: '#shortcake',
 })
 
 let tt2 = new Tooltip({
-    text: 'Golden',
-    selector: '#golden',
+	text: 'Golden',
+	selector: '#golden',
 })
 
 let tt3 = new Tooltip({
-    text: 'Peanut Butter',
-    selector: '#pb',
+	text: 'Peanut Butter',
+	selector: '#pb',
 })
 
 let tt4 = new Tooltip({
-    text: 'Red Velvet',
-    selector: '#redvelvet',
+	text: 'Red Velvet',
+	selector: '#redvelvet',
 })
 
 let tt5 = new Tooltip({
-    text: 'Mint Chocolate',
-    selector: '#mint',
+	text: 'Mint Chocolate',
+	selector: '#mint',
 })
 
 let tt6 = new Tooltip({
-    text: 'Birthday Cake',
-    selector: '#bday',
+	text: 'Birthday Cake',
+	selector: '#bday',
 })
 
 let tt7 = new Tooltip({
-    text: 'Pumpkin Spice',
-    selector: '#pspice',
+	text: 'Pumpkin Spice',
+	selector: '#pspice',
 })
 
 let tt8 = new Tooltip({
-    text: 'Classic',
-    selector: '#orig',
+	text: 'Classic',
+	selector: '#orig',
 })
 
 let tt9 = new Tooltip({
-    text: 'Lemon',
-    selector: '#lemon',
+	text: 'Lemon',
+	selector: '#lemon',
 })
+
+
+//Recipe Book
+
+var leftArrow = document.querySelector(".recipeSect .book .previous");
+var rightArrow = document.querySelector(".recipeSect .book .next");
+var page2 = document.querySelector(".recipeSect .book .page-2");
+var page3 = document.querySelector(".recipeSect .book .page-3");
+
+leftArrow.addEventListener("click", function(event){
+	page2.style.transform = "rotateY(0deg)"
+	page3.style.transform = "rotateY(180deg)"
+	console.log("right")
+})
+
+rightArrow.addEventListener("click", function(event){
+	page2.style.transform = "rotateY(180deg)"
+	page3.style.transform = "rotateY(0deg)"
+	console.log("left")
+})
+
+
+
+
+
+
