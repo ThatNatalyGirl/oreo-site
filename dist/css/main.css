@@ -88,17 +88,24 @@ header {
 	transition: .5s;
 }
 
-header .logo {
+header .logo-group {
 	width: 20%;
 	height: auto;
 	transition: .5s;
-	margin: 5% 40% 130px;
+	margin: 0% 40% 130px;
+	position: relative;
+}
+
+header .logo-group img.logo {
+	width: 20%;
 	z-index: 5;
 	position: fixed;
 }
 
-header .logo.no-z-index {
-	z-index: -1;
+header .logo-group img.text {
+	position: relative;
+	margin: 77% 0px 0px -15%;
+	width: 105px;
 }
 
 header .cloud-cluster {
@@ -944,65 +951,6 @@ section {
 	left: 41%;
 }
 
-@media screen and (min-width: 620px) {
-	header nav h3 {
-		top: 130%;
-		right: 35%;
-	}
-	header nav ul {
-		line-height: 1em;
-	}
-	.recipeSect .book .page {
-		top: 15%;
-	}
-}
-
-@media screen and (min-width: 876px) {
-	header .logo {
-		width: 20%;
-		height: auto;
-		margin: 7% 42.5%;
-		transition: .5s;
-	}
-	header .clouds {
-		width: 400%;
-	}
-	header nav {
-		top: 10px;
-		animation: ani-balloon 20s ease-out infinite;
-	}
-	header nav h3 {
-		top: 160%;
-		right: 35%;
-	}
-	header nav .ladder {
-		top: 29px;
-	}
-	header nav ul {
-		line-height: 1.6em;
-	}
-	iframe {
-		border-radius: 15px;
-		box-shadow: 0 0 0 10px #f16f43, 0 0 0 30px #ee4623, 0px 10px 80px 35px rgba(0, 0, 0, 0.35);
-	}
-}
-
-@media screen and (min-width: 1080px) {
-	header .clouds {
-		width: 300%;
-	}
-	header nav h3 {
-		top: 200%;
-		right: 33%;
-	}
-	iframe {
-		box-shadow: 0 0 0 20px #f16f43, 0 0 0 60px #ee4623, 0px 10px 80px 65px rgba(0, 0, 0, 0.35);
-	}
-	.recipeSect .book .page {
-		top: 12%;
-	}
-}
-
 .gameBg {
 	background: #f9c2c2;
 }
@@ -1440,12 +1388,91 @@ section {
 	animation: ani-swing 2s infinite alternate ease-in-out;
 }
 
-@media screen and (min-width: 740px) {
-	header .logo {
+@media screen and (min-width: 620px) {
+	header nav h3 {
+		top: 130%;
+		right: 35%;
+	}
+	header nav ul {
+		line-height: 1em;
+	}
+	.recipeSect .book .page {
+		top: 15%;
+	}
+}
+
+@media screen and (min-width: 876px) {
+	header .logo-group {
 		width: 20%;
 		height: auto;
 		margin: 7% 42.5%;
 		transition: .5s;
+	}
+	header .logo-group img.logo {
+		width: 20%;
+		z-index: 5;
+		position: fixed;
+	}
+	header .logo-group img.text {
+		position: relative;
+		margin: 77% 0px 0px -15%;
+		width: 185px;
+	}
+	header .clouds {
+		width: 400%;
+	}
+	header nav {
+		top: 10px;
+		animation: ani-balloon 20s ease-out infinite;
+	}
+	header nav h3 {
+		top: 160%;
+		right: 35%;
+	}
+	header nav .ladder {
+		top: 29px;
+	}
+	header nav ul {
+		line-height: 1.6em;
+	}
+	iframe {
+		border-radius: 15px;
+		box-shadow: 0 0 0 10px #f16f43, 0 0 0 30px #ee4623, 0px 10px 80px 35px rgba(0, 0, 0, 0.35);
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	header .clouds {
+		width: 300%;
+	}
+	header nav h3 {
+		top: 200%;
+		right: 33%;
+	}
+	iframe {
+		box-shadow: 0 0 0 20px #f16f43, 0 0 0 60px #ee4623, 0px 10px 80px 65px rgba(0, 0, 0, 0.35);
+	}
+	.recipeSect .book .page {
+		top: 12%;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	header .logo-group {
+		width: 20%;
+		height: auto;
+		margin: 7% 42.5%;
+		transition: .5s;
+	}
+	header img.logo {
+		width: 20%;
+		z-index: 5;
+		position: fixed;
+	}
+	header img.text {
+		position: relative;
+		margin: 77% 0px 0px -15%;
+		width: 185px;
 	}
 	header .clouds {
 		width: 400%;
