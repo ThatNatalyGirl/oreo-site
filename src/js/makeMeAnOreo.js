@@ -1,19 +1,6 @@
 //game1
 console.log('Make me a Monster!!!');
 
-// let currentFace = 0;
-// const faces = [
-// 	"../img/green-oreo.png",
-// 	"../img/blue-oreo.png",
-// 	"../img/pink-oreo.png",
-// 	"../img/red-oreo.png",
-// 	"../img/yellow-oreo.png",
-// ]
-
-// currentFace++;
-// change face image src to faces[currentFace] 
-
-
 var chinOptions = document.querySelector('.chin ul');
 var chinLeft = document.querySelector(".chin .previous");
 var chinRight = document.querySelector(".chin  .next");
@@ -100,6 +87,18 @@ bottomRight.onclick = function() {
 	console.log("right");
 }
 
+
+// let currentFace = 0;
+// const faces = [
+// 	"../img/green-oreo.png",
+// 	"../img/blue-oreo.png",
+// 	"../img/pink-oreo.png",
+// 	"../img/red-oreo.png",
+// 	"../img/yellow-oreo.png",
+// ]
+
+// currentFace++;
+// change face image src to faces[currentFace] 
 
 // var deg = 0;
 
