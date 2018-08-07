@@ -2,6 +2,8 @@ const holes = document.querySelectorAll('.milk');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.oreo-game');
 const start = document.querySelector('.startGame');
+const modalClose = document.querySelector(`.close`)
+const modal = document.querySelector(`.modal-wrapper`)
 
 let lastHole;
 let timeUp = false;
@@ -31,16 +33,31 @@ let peep = function() {
 	}, time);
 }
 
+let couponCode = function(){
+	modal.classList.add(`is-visible`)
+}
+
+modalClose.addEventListener(`click`, function (event) {
+	modal.classList.add('is-closing')
+	setTimeout(function () {
+		modal.classList.remove('is-visible')
+		modal.classList.remove('is-closing')
+	}, 500)
+})
+	
+
 let startGame = function() {
 	scoreBoard.textContent = 0;
 	timeUp = false;
 	score = 0;
 	peep();
 	setTimeout(() => timeUp = true, 10000)
+	setTimeout(couponCode, 10200)
 }
 
+
+
 let bonk = function(e) {
-	if(!e.isTrusted) return; // cheater!
 	score++;
 	console.log('am i a baddie?')
 	this.parentNode.classList.remove('up');

@@ -4,6 +4,8 @@ var holes = document.querySelectorAll('.milk');
 var scoreBoard = document.querySelector('.score');
 var moles = document.querySelectorAll('.oreo-game');
 var start = document.querySelector('.startGame');
+var modalClose = document.querySelector('.close');
+var modal = document.querySelector('.modal-wrapper');
 
 var lastHole = void 0;
 var timeUp = false;
@@ -33,6 +35,18 @@ var peep = function peep() {
 	}, time);
 };
 
+var couponCode = function couponCode() {
+	modal.classList.add('is-visible');
+};
+
+modalClose.addEventListener('click', function (event) {
+	modal.classList.add('is-closing');
+	setTimeout(function () {
+		modal.classList.remove('is-visible');
+		modal.classList.remove('is-closing');
+	}, 500);
+});
+
 var startGame = function startGame() {
 	scoreBoard.textContent = 0;
 	timeUp = false;
@@ -41,10 +55,10 @@ var startGame = function startGame() {
 	setTimeout(function () {
 		return timeUp = true;
 	}, 10000);
+	setTimeout(couponCode, 10200);
 };
 
 var bonk = function bonk(e) {
-	if (!e.isTrusted) return; // cheater!
 	score++;
 	console.log('am i a baddie?');
 	this.parentNode.classList.remove('up');

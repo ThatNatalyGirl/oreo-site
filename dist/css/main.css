@@ -1498,4 +1498,63 @@ section {
 	}
 }
 
+.modal-wrapper {
+	display: none;
+}
+
+.modal-wrapper.is-visible {
+	display: block;
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 100;
+}
+
+.modal-overlay.is-visible {
+	transition: .5s;
+}
+
+.modal-overlay.is-closing {
+	transition: .5s;
+}
+
+.modal-content {
+	position: absolute;
+	background: white;
+	z-index: 101;
+	width: 400px;
+	height: 300px;
+	border-radius: 20px;
+	padding: 20px;
+	left: calc(50% - 200px);
+	top: calc(50% - 150px);
+}
+
+.modal-content h1 {
+	padding-bottom: 10px;
+}
+
+.modal-content p {
+	font-size: 1.25em;
+	padding-bottom: 20px;
+}
+
+.modal-content .close {
+	background-color: #000;
+	font-family: chewy;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	color: white;
+	border: black;
+	margin: 10px;
+	cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */
