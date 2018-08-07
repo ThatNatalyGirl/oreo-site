@@ -96,6 +96,10 @@ header .logo {
 	position: fixed;
 }
 
+header .logo .no-z-index {
+	z-index: -1;
+}
+
 header .cloud-cluster {
 	display: flex;
 	flex-flow: column;
@@ -149,8 +153,8 @@ header .logo-moving {
 	width: 10%;
 	height: auto;
 	transition: .5s;
-	margin: 8% 47% 130px;
-	z-index: 3000;
+	margin: 8% 46%;
+	z-index: 3;
 	position: fixed;
 	opacity: 0;
 }

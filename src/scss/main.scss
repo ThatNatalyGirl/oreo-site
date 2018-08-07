@@ -64,6 +64,10 @@ header{
 		margin: 5% 40% 130px;
 		// z-index: 3000;
 		position: fixed;
+
+		.no-z-index{
+			z-index: -1;
+		}
 	}
 
 	.cloud-cluster{
@@ -118,8 +122,8 @@ header{
 		width: 10%;
 		height: auto;
 		transition: .5s;
-		margin: 8% 47% 130px;
-		z-index: 3000;
+		margin: 8% 46%;
+		z-index: 3;
 		position: fixed;
 		opacity: 0;
 	
