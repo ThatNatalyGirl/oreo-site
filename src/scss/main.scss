@@ -530,10 +530,69 @@ section{
 		top: 7%;
 		width: 8%;
 	}
+
+	.book{
+		background: url(../img/book.png) no-repeat;
+		background-size: cover;
+		width: 50%;
+		height: 0;
+		padding-bottom: 35%;
+		margin-left: 25%;
+		margin-top: 30px;
+
+		.next{
+			position: absolute;
+			background: url(../img/game-arrow2.png) no-repeat center;
+			background-size: 100%;	
+			right: 35%;
+			z-index: 100;
+		}
+
+		.previous{
+			background: url(../img/game-arrow.png) no-repeat center;
+			background-size: 100%;
+			left: 35%;
+			z-index: 100;
+		}
+
+		.page{
+			position: absolute;
+			width: 22%;
+			left: 29%;
+			height: 0;
+			padding-bottom: 31%;
+			top: 15%;
+		}
+
+		.page-1{
+			background: url(../img/left-page-1.png) no-repeat;
+			background-size: cover;
+		}
+
+		.page-2{
+			background: url(../img/right-page-1.png) no-repeat;
+			background-size: cover;	
+			left: 50%;
+		}
+
+		.page-3{
+			background: url(../img/left-page-2.png) no-repeat;
+			background-size: cover;	
+			left: 50%;
+			padding-bottom: 30%;
+		}
+
+		.page-4{
+			background: url(../img/right-page-2.png) no-repeat;
+			background-size: cover;	
+			left: 51%;
+			padding-bottom: 30%;
+		}
+	}
 }
 
 
-/////////Game 1 Section/////////////
+/////////Whack-Oreo Section/////////////
 .game1Sect{	
 	background: #86cdb3;
 	@include sect;
@@ -645,7 +704,7 @@ section{
 	}
 }
 
-/////////Game 2 Section/////////////
+/////////Make Me An Oreo Section/////////////
 .game2Sect{	
 	background: #a970af;
 	@include sect;
@@ -725,12 +784,8 @@ section{
 
 
 
-
-
-
-
 ////////////////////////////
-////GAME 1////
+////Make Me an Oreo////
 .gameBg{
 	background: #f9c2c2;
 }
@@ -1031,11 +1086,13 @@ section{
 			width: 23%;
 		}
 
-		&:active {
-			position:relative;
-			top:1px;
+		.curtain-right{
+			right: 0;
+			position: absolute;
+			z-index: 10;
+			width: 23%;
 		}
-	}
+	}	
 }	
 
 

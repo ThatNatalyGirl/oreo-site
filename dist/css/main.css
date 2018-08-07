@@ -598,6 +598,65 @@ section {
 	width: 8%;
 }
 
+.recipeSect .book {
+	background: url(../img/book.png) no-repeat;
+	background-size: cover;
+	width: 50%;
+	height: 0;
+	padding-bottom: 35%;
+	margin-left: 25%;
+	margin-top: 30px;
+}
+
+.recipeSect .book .next {
+	position: absolute;
+	background: url(../img/game-arrow2.png) no-repeat center;
+	background-size: 100%;
+	right: 35%;
+	z-index: 100;
+}
+
+.recipeSect .book .previous {
+	background: url(../img/game-arrow.png) no-repeat center;
+	background-size: 100%;
+	left: 35%;
+	z-index: 100;
+}
+
+.recipeSect .book .page {
+	position: absolute;
+	width: 22%;
+	left: 29%;
+	height: 0;
+	padding-bottom: 31%;
+	top: 15%;
+}
+
+.recipeSect .book .page-1 {
+	background: url(../img/left-page-1.png) no-repeat;
+	background-size: cover;
+}
+
+.recipeSect .book .page-2 {
+	background: url(../img/right-page-1.png) no-repeat;
+	background-size: cover;
+	left: 50%;
+}
+
+.recipeSect .book .page-3 {
+	background: url(../img/left-page-2.png) no-repeat;
+	background-size: cover;
+	left: 50%;
+	padding-bottom: 30%;
+}
+
+.recipeSect .book .page-4 {
+	background: url(../img/right-page-2.png) no-repeat;
+	background-size: cover;
+	left: 51%;
+	padding-bottom: 30%;
+}
+
 .game1Sect {
 	background: #86cdb3;
 	background-size: cover;
@@ -1097,9 +1156,11 @@ section {
 	width: 23%;
 }
 
-#game1 .curtain:active {
-	position: relative;
-	top: 1px;
+#game1 .curtain .curtain-right {
+	right: 0;
+	position: absolute;
+	z-index: 10;
+	width: 23%;
 }
 
 .whack-a-mole {
