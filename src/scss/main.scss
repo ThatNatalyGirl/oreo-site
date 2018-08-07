@@ -108,10 +108,10 @@ header{
 		position: absolute;
 		height: 20px;
 		right: 0;
-		top: 20px;
+		top: 0px;
 		font-family: 'Chewy', cursive;
 		transform: translate(0px, 0px);
-		animation: ani-balloon 20s ease-out infinite;
+		animation: none;
 
 		@keyframes ani-balloon {
 			0% {
@@ -130,7 +130,7 @@ header{
 				transform: translate(-30px, -15px);
 			}
 			75% {
-				transform: translate(-50px, 0px);
+				transform: translate(-40px, 0px);
 			}
 			90% {
 				transform: translate(-20px, 10px);
@@ -143,9 +143,10 @@ header{
 		h3{
 			position: absolute;
 			font-size: 2.2vw;
-			top: 35px;
-			right: 35%;
+			top: 130%;
+			right: 40%;
 			color: #fff;
+			transition: .2s;
 		}
 
 		.ladder{
@@ -156,15 +157,14 @@ header{
 			z-index: -1;
 		}
 		
-		
-		
 		ul{
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			line-height: 30px;
+			line-height: 0.5em;
 			margin-top: -15px;
 			z-index: 2;
+
 
 			a{
 				text-decoration: none;
@@ -277,7 +277,18 @@ section{
 		margin-top: -1%;
 		left: 1%;
 		width: 8%;	
+		transform: translate(0px, 0px) rotate(-2deg);
+		animation: ani-vineL 3s infinite alternate ease-in-out;
 	}
+
+	@keyframes ani-vineL {
+		0% { 
+			transform: translate(0px, 5px) rotate(5deg);
+		}
+		100% { 
+			transform: translate(2px, 0px) rotate(2deg);
+		}
+	}	
 
 	.sideGreen{
 		background-image: url(../img/side-green-curve.png);
@@ -523,7 +534,18 @@ section{
 		top: 38%;
 		right: 5%;
 		width: 8%;
+		transform: translate(0px, 0px) rotate(-4deg);
+		animation: ani-vineR 3s infinite alternate ease-in-out;
 	}
+
+	@keyframes ani-vineR {
+		0% { 
+			transform: translate(0px, 5px) rotate(-2deg);
+		}
+		100% { 
+			transform: translate(-4px, 2px) rotate(2deg);
+		}
+	}	
  	
 	.rightPlant2{
 		right: 0%;
@@ -577,7 +599,7 @@ section{
 			left: 28%;
 			height: 0;
 			padding-bottom: 31%;
-			top: 15%;
+			top: 21%;
 		}
 
 		.page-1{
@@ -781,8 +803,29 @@ section{
 	}
 
 }
+@media screen and (min-width: 620px){
+	header{
+		nav{
+			h3{
+				top: 130%;
+				right: 35%;
+			}
 
-@media screen and (min-width: 740px){
+			ul{
+				line-height: 1em;
+			}
+		}
+	}
+
+	.recipeSect{
+		.book{
+			.page{
+				top: 15%;
+			}
+		}
+	}
+}
+@media screen and (min-width: 876px){
 	header{
 		.logo{
 			width: 20%;
@@ -796,8 +839,20 @@ section{
 		}	
 
 		nav{
+			top: 10px;
+			animation: ani-balloon 20s ease-out infinite;
+
+			h3{
+				top: 160%;
+				right: 35%;
+			}
+
 			.ladder{
 				top: 29px;
+			}
+
+			ul{
+				line-height: 1.6em;
 			}
 		}
 	}
@@ -816,13 +871,22 @@ section{
 
 		nav{
 			h3{
-				right: 30%;
+				top: 200%;
+				right: 33%;
 			}
 		}
 	}
 
 	iframe{
 		box-shadow: 0 0 0 20px #f16f43, 0 0 0 60px #ee4623, 0px 10px 80px 65px rgba(0,0,0,0.35);
+	}
+
+	.recipeSect{
+		.book{
+			.page{
+				top: 12%;
+			}
+		}
 	}
 }
 
