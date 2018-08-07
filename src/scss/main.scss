@@ -66,10 +66,65 @@ header{
 		position: fixed;
 	}
 
+	.cloud-cluster{
+		display: flex;
+		flex-flow: column;  
+
+		.cloud{
+			width: 300px;
+			opacity: 0;
+		}
+
+		.cloud-1{
+			animation: ani-scroll 25s infinite;
+		}
+		.cloud-2{
+			animation: ani-scroll 25s 5s infinite;
+		}
+		.cloud-3{
+			animation: ani-scroll 25s 8s infinite;
+		}
+		.cloud-4{
+			animation: ani-scroll 10s 9s infinite;
+		}
+
+		@keyframes ani-scroll {
+			0% {
+			  transform: translateX(0);
+			  opacity: 0;	
+			}
+			10%{
+				opacity: .3;
+			}
+			25%{
+				opacity: 1;
+			}
+			50% {
+			  transform: translateX(1500px);
+			  opacity: .3;
+			}
+			75%{
+				opacity: 1;
+			}
+			100% {
+				transform: translateX(0);
+			  }
+		  }
+		  
+		  @keyframes ani-clouds {
+			100% {
+			  transform: translateX(0);
+			}
+			0% {
+			  transform: translateX(-1541px);
+			}
+		  }
+	}
+	
+
+
 	.not-smaller{
 		opacity: 100;
-
-
 	}
 
 	img.is-smaller{
