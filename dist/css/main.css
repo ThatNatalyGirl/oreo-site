@@ -125,7 +125,7 @@ header .cloud-cluster .cloud-4 {
 
 @keyframes ani-scroll {
 	0% {
-		transform: translateX(0);
+		transform: translateX(-300px);
 		opacity: 0;
 	}
 	10% {
