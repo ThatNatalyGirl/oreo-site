@@ -865,37 +865,6 @@ section {
 	left: 41%;
 }
 
-@media screen and (min-width: 740px) {
-	header .logo {
-		width: 20%;
-		height: auto;
-		margin: 7% 42.5%;
-		transition: .5s;
-	}
-	header .clouds {
-		width: 400%;
-	}
-	header nav .ladder {
-		top: 29px;
-	}
-	iframe {
-		border-radius: 15px;
-		box-shadow: 0 0 0 10px #f16f43, 0 0 0 30px #ee4623, 0px 10px 80px 35px rgba(0, 0, 0, 0.35);
-	}
-}
-
-@media screen and (min-width: 1080px) {
-	header .clouds {
-		width: 300%;
-	}
-	header nav h3 {
-		right: 30%;
-	}
-	iframe {
-		box-shadow: 0 0 0 20px #f16f43, 0 0 0 60px #ee4623, 0px 10px 80px 65px rgba(0, 0, 0, 0.35);
-	}
-}
-
 .gameBg {
 	background: #f9c2c2;
 }
@@ -1296,16 +1265,11 @@ section {
 .game-info {
 	display: flex;
 	justify-content: center;
-}
-
-.game-info h2 {
-	padding-top: 30px;
-	color: white;
+	width: 100%;
 }
 
 .game-info p {
 	font-family: chewy;
-	padding-top: 50px;
 	color: white;
 }
 
@@ -1318,15 +1282,75 @@ section {
 	text-decoration: none;
 	color: white;
 	border: black;
-	margin: 30px;
+	margin: 10px;
 	cursor: pointer;
 }
 
-.game-info .game-char {
+.game-info .game-oreo {
 	width: 25%;
 	height: 25%;
-	margin-right: 15%;
 	transform: rotate(-25deg);
+}
+
+.game-info .game-char {
+	width: 22%;
+	height: 22%;
+	transform: rotate(15deg);
+	position: relative;
+	top: -70px;
+}
+
+@media screen and (min-width: 740px) {
+	header .logo {
+		width: 20%;
+		height: auto;
+		margin: 7% 42.5%;
+		transition: .5s;
+	}
+	header .clouds {
+		width: 400%;
+	}
+	header nav .ladder {
+		top: 29px;
+	}
+	iframe {
+		border-radius: 15px;
+		box-shadow: 0 0 0 10px #f16f43, 0 0 0 30px #ee4623, 0px 10px 80px 35px rgba(0, 0, 0, 0.35);
+	}
+	.game-oreo {
+		margin-right: 15%;
+	}
+	.game-char {
+		margin-left: 15%;
+	}
+	.game-info-text h2 {
+		padding-top: 30px;
+	}
+	.game-info-text p {
+		padding-top: 50px;
+	}
+	.gamebutton {
+		margin-top: 20px;
+	}
+	.game-char {
+		width: 25%;
+		height: 25%;
+		transform: rotate(15deg);
+		position: relative;
+		margin-top: -150px;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	header .clouds {
+		width: 300%;
+	}
+	header nav h3 {
+		right: 30%;
+	}
+	iframe {
+		box-shadow: 0 0 0 20px #f16f43, 0 0 0 60px #ee4623, 0px 10px 80px 65px rgba(0, 0, 0, 0.35);
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
