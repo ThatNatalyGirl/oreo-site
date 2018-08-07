@@ -708,6 +708,21 @@ section {
 	background-image: url(../img/curve-5.png);
 }
 
+.game1Sect .game-info {
+	display: flex;
+}
+
+.game1Sect .game-info h2 {
+	padding-top: 30px;
+	color: white;
+}
+
+.game1Sect .game-info p {
+	font-family: chewy;
+	padding-top: 50px;
+	color: white;
+}
+
 .game1Sect .plane {
 	position: absolute;
 	top: 0px;

@@ -632,6 +632,22 @@ section{
 		background-image: url(../img/curve-5.png);
 	}
 
+
+	.game-info{
+		display: flex;
+		
+		h2{
+			padding-top: 30px;
+			color: white;
+		}
+
+		p{
+			font-family: chewy;
+			padding-top: 50px;
+			color: white;
+		}
+	}	
+
 	.plane{
 		position: absolute;
 		top: 0px;
