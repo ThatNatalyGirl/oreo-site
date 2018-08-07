@@ -108,17 +108,8 @@ header{
 			}
 			100% {
 				transform: translateX(0);
-			  }
-		  }
-		  
-		  @keyframes ani-clouds {
-			100% {
-			  transform: translateX(0);
 			}
-			0% {
-			  transform: translateX(-1541px);
-			}
-		  }
+		}
 	}
 	
 
@@ -850,7 +841,6 @@ section{
 				right: 35%;
 			}
 
-<<<<<<< HEAD
 			ul{
 				line-height: 1em;
 			}
@@ -933,8 +923,6 @@ section{
 
 
 
-=======
->>>>>>> c47b9c6d8075d624fa07e21953bc874ae48ec4fb
 
 ////////////////////////////
 ////Make Me an Oreo////

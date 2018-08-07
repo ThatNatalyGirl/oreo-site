@@ -146,15 +146,6 @@ header .cloud-cluster .cloud-4 {
 	}
 }
 
-@keyframes ani-clouds {
-	100% {
-		transform: translateX(0);
-	}
-	0% {
-		transform: translateX(-1541px);
-	}
-}
-
 header .not-smaller {
 	opacity: 100;
 }
@@ -946,7 +937,6 @@ section {
 	left: 41%;
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 620px) {
 	header nav h3 {
 		top: 130%;
@@ -1006,8 +996,6 @@ section {
 	}
 }
 
-=======
->>>>>>> c47b9c6d8075d624fa07e21953bc874ae48ec4fb
 .gameBg {
 	background: #f9c2c2;
 }
