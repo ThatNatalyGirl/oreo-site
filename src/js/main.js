@@ -33,10 +33,10 @@ nav.addEventListener("mouseout", function(){
 	new ScrollMagic.Scene({triggerElement: ".cloud-4"})
 		.setClassToggle(".logo-moving", "not-smaller") // add class toggle
         .addTo(controller);
-    new ScrollMagic.Scene({triggerElement: ".videoSect"})
+        new ScrollMagic.Scene({triggerElement: ".videoSect"})
 		.setClassToggle(".logo", "no-z-index") // add class toggle
 		.addTo(controller)
-    new ScrollMagic.Scene({triggerElement: ".videoSect"})
+        new ScrollMagic.Scene({triggerElement: ".videoSect"})
 		.setClassToggle(".logo-moving", "is-smaller") // add class toggle
 		.addTo(controller);
 	new ScrollMagic.Scene({triggerElement: ".game2Sect"})

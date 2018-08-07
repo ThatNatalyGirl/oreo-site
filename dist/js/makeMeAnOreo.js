@@ -4,24 +4,24 @@
 console.log('Make me a Monster!!!');
 
 var chinOptions = document.querySelector('.chin ul');
-var chinLeft = document.querySelector(".chin .previous");
-var chinRight = document.querySelector(".chin  .next");
+var chinLeft = document.querySelector(".chin-previous");
+var chinRight = document.querySelector(".chin-next");
 
 var faceOptions = document.querySelector('.face ul');
-var faceLeft = document.querySelector(".face .previous");
-var faceRight = document.querySelector(".face  .next");
+var faceLeft = document.querySelector(".face-previous");
+var faceRight = document.querySelector(".face-next");
 
 var headOptions = document.querySelector('.head ul');
-var headLeft = document.querySelector(".head .previous");
-var headRight = document.querySelector(".head  .next");
+var headLeft = document.querySelector(".head-previous");
+var headRight = document.querySelector(".head-next");
 
 var topOptions = document.querySelector('.top ul');
-var topLeft = document.querySelector(".top .previous");
-var topRight = document.querySelector(".top  .next");
+var topLeft = document.querySelector(".top-previous");
+var topRight = document.querySelector(".top-next");
 
 var bottomOptions = document.querySelector('.bottom ul');
-var bottomLeft = document.querySelector(".bottom .previous");
-var bottomRight = document.querySelector(".bottom  .next");
+var bottomLeft = document.querySelector(".bottom-previous");
+var bottomRight = document.querySelector(".bottom-next");
 
 var chinDeg = 0;
 var faceDeg = 0;
