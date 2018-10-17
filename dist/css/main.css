@@ -356,7 +356,7 @@ section {
 	background-position: bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 100%;
+	bottom: 99%;
 	left: 0;
 	width: 100%;
 	min-height: 550px;
@@ -460,7 +460,7 @@ section {
 	background-position: bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 100%;
+	bottom: 99%;
 	left: 0;
 	width: 100%;
 	min-height: 550px;
@@ -579,6 +579,38 @@ section {
 	}
 }
 
+.flavorSect h4 {
+	margin-top: 2%;
+	margin-left: -1%;
+	color: #fff;
+	background: #a970af;
+	border: 3px solid #ee4623;
+	border-radius: 10px;
+	padding: 10px 0%;
+	position: absolute;
+	width: 14%;
+	z-index: 100;
+	opacity: 0;
+	transition: .5s;
+	font-size: .1em;
+}
+
+.flavorSect h4:hover {
+	cursor: pointer;
+	animation-play-state: paused;
+}
+
+@media screen and (min-width: 678px) {
+	.flavorSect h4 {
+		margin-top: 5%;
+		font-size: 1em;
+	}
+}
+
+.flavorSect h4.last {
+	margin-left: -5%;
+}
+
 .recipeSect {
 	background: #ee4623;
 	background-size: cover;
@@ -596,7 +628,7 @@ section {
 	background-position: bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 100%;
+	bottom: 99%;
 	left: 0;
 	width: 100%;
 	min-height: 550px;
@@ -780,7 +812,7 @@ section {
 	background-position: bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 100%;
+	bottom: 99%;
 	left: 0;
 	width: 100%;
 	min-height: 550px;
@@ -905,7 +937,7 @@ section {
 	background-position: bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 100%;
+	bottom: 99%;
 	left: 0;
 	width: 100%;
 	min-height: 550px;
@@ -930,7 +962,7 @@ section {
 	background-position: bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 100%;
+	bottom: 99%;
 	left: 0;
 	width: 100%;
 	min-height: 550px;
@@ -1020,7 +1052,7 @@ section {
 	width: 100%;
 	height: 0;
 	padding-bottom: 100%;
-	top: 0;
+	top: 5%;
 }
 
 #game1 .arrows a {
@@ -1038,11 +1070,11 @@ section {
 }
 
 #game1 .arrows .head-previous, #game1 .arrows .head-next {
-	top: 5%;
+	top: 0%;
 }
 
 #game1 .arrows .face-previous, #game1 .arrows .face-next {
-	top: 10%;
+	top: 8%;
 }
 
 #game1 .arrows .chin-previous, #game1 .arrows .chin-next {
@@ -1477,7 +1509,7 @@ section {
 		padding-top: 30px;
 	}
 	.game-info-text p {
-		padding-top: 50px;
+		padding-top: 0px;
 	}
 	.gamebutton {
 		margin-top: 20px;

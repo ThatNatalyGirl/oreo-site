@@ -16,7 +16,7 @@
 	background-position: bottom;
 	background-size: 100%;
 	position: absolute;
-	bottom: 100%;
+	bottom: 99%;
 	left: 0;
 	width: 100%;
 	min-height: 550px;
@@ -132,7 +132,7 @@ header{
 		opacity: 0;
 	
 		.not-smaller{
-		opacity: 0;
+			opacity: 0;
 		}
 	}
 
@@ -447,15 +447,10 @@ section{
 			position: absolute;
 			width: 9%;
 			z-index: 100;
-			// transform-style: preserve-3d;
-			// transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
-			// transition: .5s;
 			
 			&:hover{
-			// transform: rotate3d(1, 0, 1, 10deg) translate3d(0, 1px, 20px);
-			// transform: rotate(3deg)
-			cursor: pointer;
-			animation-play-state: paused;
+				cursor: pointer;
+				animation-play-state: paused;
 			}
 		}
 
@@ -531,6 +526,36 @@ section{
 				transform: rotate(-3deg) 
 			}
 		}
+	}
+
+	h4{
+		margin-top: 2%;
+		margin-left: -1%;
+		color: #fff;
+		background: #a970af;
+		border: 3px solid #ee4623;
+		border-radius: 10px;
+		padding: 10px 0%;
+		position: absolute;
+		width: 14%;
+		z-index: 100;
+		opacity: 0;
+		transition: .5s;
+		font-size: .1em;
+
+		&:hover{
+			cursor: pointer;
+			animation-play-state: paused;
+		}
+
+		@media screen and (min-width: 678px){
+			margin-top: 5%;
+			font-size: 1em;
+		}
+	}
+
+	h4.last{
+		margin-left: -5%;
 	}
 }
 
@@ -957,7 +982,7 @@ section{
 		width: 100%;
 		height: 0;
 		padding-bottom: 100%;
-		top: 0;
+		top: 5%;
 
 		a{
 			position: absolute;
@@ -974,10 +999,10 @@ section{
 		}
 
 		.head-previous, .head-next{
-			top: 5%;
+			top: 0%;
 		}
 		.face-previous, .face-next{
-			top: 10%;
+			top: 8%;
 		}
 		.chin-previous, .chin-next{
 			top: 15%;
@@ -1453,7 +1478,7 @@ section{
 		}
 	
 		p{
-			padding-top: 50px;
+			padding-top: 0px;
 		}	
 	}
 
